@@ -48,10 +48,10 @@ public class StaffDataInitializer implements DataInitializer{
 		List.of(
 				new RegistrationForm("1000", "true", "true", "true", "true",
 						"true", "true", "Boss", "Boss",
-						"abc", "abc", "boss@betrieb.de")
-		//		new RegistrationForm("500", "true", null, null, "true",
-		//				"true", "true", "Mustermann", "Max",
-		//				"abc", "abc", "max.mustermann@tu-dresden.de"),
+						"abc", "abc", "boss@betrieb.de"),
+				new RegistrationForm("500", "true", null, null, "true",
+						"true", "true", "Mustermann", "Max",
+						"abc", "abc", "max.mustermann@tu-dresden.de")
 		//		new RegistrationForm("600", null ,null, "true", null,
 		//				"true", null, "Musterfrau", "Anna",
 		//				"abc", "abc", "anna.musterfrau@tu-dresden.de"),
