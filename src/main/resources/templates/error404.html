@@ -1,0 +1,61 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>404</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.css" type="text/css"/>
+		<link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+		<link th:href="@{/resources/css/orders.css}" rel="stylesheet"
+		href="../static/resources/css/orders.css" type="text/css"/>
+        
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		<!-- BANNER -->
+        <div th:fragment="banner" class="banner-bg" id="top">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2 th:text="#{error404.header}">Miss Mint Mending Points | Alles aus einer Hand</h2>
+                <h5 th:text="#{error404.text}">
+                	404 ERROR . SEITE NICHT GEFUNDEN 
+                </h5>
+            </div>
+        </div>
+        <!-- /BANNER -->
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    <hr>
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+                </div>
+            </div>
+        </div>
+
+
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+
+    </body>
+</html>

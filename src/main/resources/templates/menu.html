@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+			        <!-- SIDEBAR -->
+        <nav th:fragment="menu" >
+            <div class="top-section">
+            <a th:href="@{/}">
+                <div class="profile-image">         
+                    <img th:src="@{/resources/images/logo.png}" src="/resources/images/logo.png">
+                </div>
+            </a>
+                <h3 class="profile-title" th:text="#{menu.header}">Miss Mint Mending Points</h3>
+                <p class="profile-description" th:text="#{menu.subheader}">Alles aus einer Hand</p>
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+                <ul class="navigation">
+                
+                	<li sec:authorize="isAnonymous()">
+     					<a href="login.html" th:href="@{/login}" th:text="#{menu.login}">
+               				Login
+               			</a>
+               		</li>
+					<li sec:authorize="hasRole('ADMIN')">
+						<a href="register.html" th:href="@{/register}" th:text="#{menu.register}">
+							Registrierung
+						</a>
+					</li>
+					<li sec:authorize="hasRole('ADMIN')" >
+						<a th:href="@{/personallist}" th:text="#{menu.staff}">
+							Personal
+						</a>
+					</li>
+					<li>
+						<a sec:authorize="hasRole('USER')" th:href="@{/services}" href="/services" th:text="#{menu.services}">
+							Services
+						</a>
+					</li>
+					<li>
+						<a sec:authorize="hasRole('USER')" th:href="@{/today}" href="/ordertable" th:text="#{menu.ordertable}">
+							Auftragsverwaltung
+						</a>
+					</li>
+					<li>
+						<a sec:authorize="hasRole('USER')" th:href="@{/materials}" href="/materials" th:text="#{menu.material}">
+							Material
+						</a>
+					</li>
+					<li>
+						<a sec:authorize="hasRole('USER')" th:href="@{/materialInfos}" href="/materialInfos" th:text="#{menu.materialinformation}">
+							Material Information
+						</a>
+					</li>	
+					
+					<li>
+						<a sec:authorize="hasRole('USER')" th:href="@{/financialoverview/today}" th:text="#{menu.financialoverview}">
+							Finanzübersicht
+						</a>
+					</li>
+					
+					
+					<li sec:authorize="isAuthenticated()">
+	                	<form action="#" id ="logoutForm" th:action="@{/logout}" method="post">	
+	                		<a href="#" onclick="document.getElementById('logoutForm').submit()" th:text="#{menu.logout}">
+	                		Ausloggen
+	                		</a>			
+	                	</form>	
+					</li>
+		        </ul>
+            </div> 
+            
+            <div  sec:authorize="isAuthenticated()" class="login-infos">
+            	<div th:text="'Username: '+${name}"></div>
+				<div th:text="'Authorities: '+${authorities}"></div>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div> 
+        </nav>
+	</body>
+</html>

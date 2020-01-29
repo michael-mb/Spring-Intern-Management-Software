@@ -1,0 +1,205 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Finanzübersicht</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.css" type="text/css"/>
+		<link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+		<link th:href="@{/resources/css/next-previous.css}" rel="stylesheet"
+            href="../static/resources/css/next-previous.css" type="text/css"/>
+        <link th:href="@{/resources/css/print.css}" rel="stylesheet"
+        href="../static/resources/css/print.css" media="print" type="text/css"/>
+                
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title" th:text="#{financialoverview.header}">KLEINREPARATURBETRIEB - Finanzübersicht</h4>
+                           <p th:text="#{financialoverview.hello} + ${name} + #{financialoverview.salarytext} + ${salary}"></p>
+                        </div>
+                    </div>
+                    <div sec:authorize="hasRole('ADMIN')">
+                    <a href="#" class="previous" th:href="@{/financialoverview/previous}" th:text="#{financialoverview.previous}">&laquo; Previous</a>
+					<a href="#" class="next" th:href="@{/financialoverview/next}" th:text="#{financialoverview.next}">Next &raquo;</a>
+		
+                    <div class="row projects-holder">
+                    
+                    	            <div class="card super-card">
+                <div class="card-body p-0">
+                    <hr class="my-5">
+
+                    <div class="row pb-5 p-5">
+                        <div class="col-md-6">
+                            <p class="font-weight-bold mb-4" th:next="#{financialoverview.centralInformation.header}">Zentral Information</p>
+                            <p class="mb-1" th:text="#{financialoverview.centralInformation.subheader}">Miss Mint Mending Point Zentral</p>
+                            <p th:text="#{financialoverview.department}">Abteilung Finanzen</p>
+                            <p class="mb-1" th:text="#{financialoverview.cityandcountry}">Berlin, Germany</p>
+                            <p class="mb-1" th:text="#{financialoverview.postcode}">01127 Berlin</p>
+                        </div>
+
+                        <div class="col-md-6 text-right">
+                            <p class="font-weight-bold mb-4" th:text="#{financialoverview.paymentdetails.header}">Payment Details</p>
+                            <p class="mb-1"><span class="text-muted" th:text="#{financialoverview.paymentdetails.name}">Miss Mint Mending Point Dresden </span></p>
+                            <p class="mb-1"><span class="text-muted" th:text="#{financialoverview.paymentdetails.vatID}">VAT ID: </span> 10253642</p>
+                            <p class="mb-1"><span class="text-muted" th:text="#{financialoverview.paymentdetails.paymenttype}">Payment Type:</span> Root</p>
+                            <p class="mb-1" th:text="#{finnacialoverview.paymentdetails.city}"><span class="text-muted">01069 </span> Dresden</p>
+                        </div>
+                    </div>
+               		<span class="month" th:text="#{financialoverview.currentmonth} + ${month}"></span>
+                    <div class="row p-5">
+                    
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="border-0 text-uppercase  font-weight-bold">#</th>
+                                        <th class="border-0 text-uppercase  font-weight-bold" th:text="#{financialoverview.itemcode}">Item-Kode</th>
+                                        <th class="border-0 text-uppercase  font-weight-bold" th:text="#{financialoverview.description}">Description</th>
+                                        <th class="border-0 text-uppercase  font-weight-bold" th:text="#{financialoverview.unitcost}">Unit Cost</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="entry , it : ${entries}" th:with="index = ${it.count}" >
+                                        <td th:text="${index}">1</td>
+                                        <td th:text="${entry.id}">Software</td>
+                                        <td th:text="${entry.description}">LTS Versions</td>
+                                        <td th:text="${entry.value}">Total</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row-reverse bg-dark text-white p-4">
+                        
+                        <div class="py-3 px-5 text-right">
+                            <div class="mb-2" th:text="#{financialoverview.total}">Gesamtbilanz:</div>
+                            <div class="h2 font-weight-light" th:text="${balance}">$234,234</div>
+                        </div>
+
+                        <div class="py-3 px-5 text-right">
+                            <div class="mb-2" th:text="#{financialoverview.discount}">Discount:</div>
+                            <div class="h2 font-weight-light">10%</div>
+                        </div>
+
+                        <div class="py-3 px-5 text-right">
+                            <div class="mb-2" th:text="#{financialoverview.monthlyincome}">Die monatlichen Einnahmen betragren : </div>
+                            <div class="h2 font-weight-light" th:text="${earnings}">$32,432</div>
+                        </div> 
+                        <div class="py-3 px-5 text-right print-view">
+                            <div class="mb-2"th:text="#{financialoverview.print}">Finanzübersicht drucken:</div>
+                            <div class="h2 font-weight-light">
+                            	<a class="btn btn-success" onClick="window.print()">
+                            		<i class="fa fa-print"></i>
+                            	</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+       		</div>
+       		</div>
+       </div>
+        
+        <br>
+                    <canvas id="canvas"></canvas>
+		            <script th:inline="javascript">
+                        var balances = /*[[${balances}]]*/ null;
+                        var indexes = /*[[${indexes}]]*/ null;
+                        var config = {
+                            type: 'line',
+                            data: {
+                                labels: indexes,
+                                datasets: [{
+                                    label: 'in EUR',
+                                    data: balances,
+                                    fill: false,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                title: {
+                                    display: true,
+                                    text: 'Finanzübersicht'
+                                },
+                                tooltips: {
+                                    mode: 'index',
+                                    intersect: false,
+                                },
+                                hover: {
+                                    mode: 'nearest',
+                                    intersect: true
+                                },
+                                scales: {
+                                    xAxes: [{
+                                        display: true,
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Monat'
+                                        }
+                                    }],
+                                    yAxes: [{
+                                        display: true,
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Gesamtbilanz'
+                                        }
+                                    }]
+                                }
+                            }
+                        };
+
+                        window.onload = function() {
+                            var ctx = document.getElementById('canvas').getContext('2d');
+                            window.myLine = new Chart(ctx, config);
+                        };
+                    </script>
+
+                    <hr>
+
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+        
+        
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+        <script th:src="@{/resources/js/Chart.js}" src="../static/resources/js/Chart.js"></script>     
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="../static/resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </body>
+</html>

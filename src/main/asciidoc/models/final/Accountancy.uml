@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kickstart.Accountancy</OriginalElement>
+  <nodes>
+    <node x="18.0" y="800.0">kickstart.Accountancy.AccountancyControllerIntegrationTests</node>
+    <node x="241.25" y="0.0">kickstart.Accountancy.AccountancyManagement</node>
+    <node x="0.0" y="521.5">kickstart.Accountancy.AccountancyController</node>
+    <node x="364.0" y="543.5">kickstart.Accountancy.AccountancyDataInitializer</node>
+    <node x="811.0" y="478.0">kickstart.Accountancy.AccountancyManagementUnitTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kickstart.Accountancy.AccountancyController" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="-86.0" y="-92.5" />
+      <point x="86.0" y="448.0" />
+      <point x="287.15" y="448.0" />
+      <point x="-183.60000000000002" y="214.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyDataInitializer" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="-106.75" y="-70.5" />
+      <point x="0.0" y="214.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyControllerIntegrationTests" target="kickstart.Accountancy.AccountancyController">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="0.0" y="-136.0" />
+      <point x="983.0" y="448.0" />
+      <point x="654.3500000000001" y="448.0" />
+      <point x="183.60000000000014" y="214.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="126.0" y="162.5" />
+  <SelectedNodes>
+    <node>kickstart.Accountancy.AccountancyControllerIntegrationTests</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

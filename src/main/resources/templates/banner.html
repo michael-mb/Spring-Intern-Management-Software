@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
+	</head>
+	<body>
+			        
+        <div th:fragment="banner">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2 th:text="#{banner.header}">Miss Mint Mending Points | Alles aus einer Hand</h2>
+                <h5 th:text="#{banner.subheader}">
+                	Wir können für Sie alles reparieren . 
+                </h5>
+            </div>
+        </div>
+	</body>
+</html>

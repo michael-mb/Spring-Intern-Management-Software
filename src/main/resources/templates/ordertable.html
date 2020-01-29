@@ -1,0 +1,268 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/orders.css}" rel="stylesheet"
+              href="../static/resources/css/orders.css" type="text/css"/>
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+              href="../static/resources/css/normalize.css" type="text/css"/>
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+              href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.css}" rel="stylesheet"
+              href="../static/resources/css/bootstrap.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+              href="../static/resources/css/templatemo-style.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap-grid.css}" rel="stylesheet"
+              href="../static/resources/css/bootstrap-grid.css" type="text/css"/>
+        <link th:href="@{/resources/css/orders.css}" rel="stylesheet"
+              href="../static/resources/css/orders.css" type="text/css"/>
+        <link th:href="@{/resources/css/next-previous.css}" rel="stylesheet"
+              href="../static/resources/css/next-previous.css" type="text/css"/>
+
+        <title>Auftragstabelle</title>
+    </head>
+    <body>
+        <!-- MENU -->
+        <div class="sidebar-menu" th:include="menu :: menu"></div>
+        <!-- /MENU -->
+
+		
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="widget-title" th:text="#{ordertable.header}">KLEINREPARATURBETRIEB - Auftragsplan</h4>
+                                <p th:text="#{ordertable.subheader}"> Hier haben sie die Möglichkeit , die Aufträge zu bearbeiten . </p>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="previous" th:href="@{/previous}" th:text="#{ordertable.previous}">&laquo; Previous</a>
+						<a href="#" class="next" th:href="@{/next}" th:text="#{ordertable.next}">Next &raquo;</a>
+							<div class="row projects-holder">
+								
+								<div class="container mt-3">
+									  <!-- Nav tabs -->
+									  <ul class="nav nav-tabs">
+									    <li class="nav-item">
+									      <a class="nav-link active" data-toggle="tab" href="#raum1" th:text="#{ordertable.room1}">RAUM 1</a>
+									    </li>
+									    <li class="nav-item">
+									      <a class="nav-link" data-toggle="tab" href="#raum2" th:text="#{ordertable.room2}">RAUM 2</a>
+									    </li>
+									  </ul>
+									
+									  <!-- Tab panes -->
+									  <div class="tab-content">
+									    <div id="raum1" class="container tab-pane active"><br>
+
+											<p th:text="${week}"></p>
+
+									      <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th th:text="#{ordertable.time}">Zeit</th>
+                                    <th scope="col" th:text="#{ordertable.monday}">Montag</th>
+                                    <th scope="col" th:text="#{ordertable.tuesday}">Dienstag</th>
+                                    <th scope="col" th:text="#{ordertable.wednesday}">Mittwoch</th>
+                                    <th scope="col" th:text="#{ordertable.thursday}">Donnerstag</th>
+                                    <th scope="col" th:text="#{ordertable.friday}">Freitag</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>08:00 - 10:00</th>
+                                    <div th:each="time1: ${time1Slot1}">
+                                    	<td th:if="${time1.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time1.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time1.skillColor} + ' 0%, white 20%, white 80%, ' + ${time1.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time1.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time1.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time1.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time1.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time1.customerName == 'nullcustomer'}"></td>
+                                    </div> 
+                                </tr>
+                                <tr>
+                                    <th>10:00 - 12:00</th>
+                                    <div th:each="time2 : ${time2Slot1}">
+                                    	<td th:if="${time2.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time2.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time2.skillColor} + ' 0%, white 20%, white 80%, ' + ${time2.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time2.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time2.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time2.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time2.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time2.customerName == 'nullcustomer'}"></td>
+                                    </div> 
+                                </tr>
+                                <tr>
+                                    <th>12:00 - 14:00</th>
+                                    <div th:each="time3 : ${time3Slot1}">
+                                    	<td th:if="${time3.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time3.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time3.skillColor} + ' 0%, white 20%, white 80%, ' + ${time3.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time3.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time3.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time3.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time3.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time3.customerName == 'nullcustomer'}"></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>14:00 - 16:00</th>
+                                    <div th:each="time4 : ${time4Slot1}">
+                                    	<td th:if="${time4.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time4.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time4.skillColor} + ' 0%, white 20%, white 80%, ' + ${time4.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time4.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time4.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time4.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time4.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time4.customerName == 'nullcustomer'}"></td>
+                                    </div> 
+                                </tr>
+                                </tbody>
+                            </table>
+                            
+							</div>
+							<div id="raum2" class="container tab-pane fade"><br>
+
+									     <p th:text="${week}"></p>
+
+									      <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th th:text="#{ordertable.time}">Zeit</th>
+                                    <th scope="col" th:text="#{ordertable.monday}">Montag</th>
+                                    <th scope="col" th:text="#{ordertable.tuesday}">Dienstag</th>
+                                    <th scope="col" th:text="#{ordertable.wednesday}">Mittwoch</th>
+                                    <th scope="col" th:text="#{ordertable.thursday}">Donnerstag</th>
+                                    <th scope="col" th:text="#{ordertable.friday}">Freitag</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>08:00 - 10:00</th>
+                                    <div th:each="time1: ${time1Slot2}">
+                                    	<td th:if="${time1.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time1.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time1.skillColor} + ' 0%, white 20%, white 80%, ' + ${time1.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time1.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time1.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time1.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time1.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time1.customerName == 'nullcustomer'}"></td>
+                                    </div> 
+                                </tr>
+                                <tr>
+                                    <th>10:00 - 12:00</th>
+                                    <div th:each="time2 : ${time2Slot2}">
+                                    	<td th:if="${time2.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time2.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time2.skillColor} + ' 0%, white 20%, white 80%, ' + ${time2.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time2.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time2.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time2.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time2.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time2.customerName == 'nullcustomer'}"></td>
+                                    </div> 
+                                </tr>
+                                <tr>
+                                    <th>12:00 - 14:00</th>
+                                    <div th:each="time3 : ${time3Slot2}">
+                                    	<td th:if="${time3.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time3.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time3.skillColor} + ' 0%, white 20%, white 80%, ' + ${time3.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time3.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time3.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time3.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time3.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time3.customerName == 'nullcustomer'}"></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>14:00 - 16:00</th>
+                                    <div th:each="time4 : ${time4Slot2}">
+                                    	<td th:if="${time4.customerName != 'nullcustomer'}">
+                                    		<a th:href="@{/orderpage/{order_ID}(order_ID=${time4.order_id})}">
+	                                            <div  class="card" th:style="'background: linear-gradient(to bottom right, ' + ${time4.skillColor} + ' 0%, white 20%, white 80%, ' + ${time4.statusColor} + ' 100%);'">
+	                                                <div class="card-body">
+	                                                    <h5 th:text="${time4.skill}" class="card-title">Card title</h5>
+	                                                    <p th:text="${time4.subcategory}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time4.finishDateIntern}" class="card-text  p-card">content</p>
+	                                                    <p th:text="${time4.status}" class="card-text p-card">content</p>
+	                                                </div>
+	                                            </div>
+	                                       	</a>
+                                    	</td>
+                                    	<td th:if="${time4.customerName == 'nullcustomer'}"></td>
+                                    </div> 
+                                </tr>
+                                </tbody>
+                            </table>
+									      </div>
+									  </div>
+								</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+        
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/bootstrap.js}" src="js/js/bootstrap.js"></script>
+        <script th:src="@{/resources/js/bootstrap.bundle.js}" src="js/bootstrap.bundle.js"></script>
+        <script th:src="@{/resources/js/bootstrap.bundle.js.map}" src="resources/js/plugin.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+    </body>
+</html>

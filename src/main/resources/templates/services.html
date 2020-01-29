@@ -1,0 +1,160 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Services</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.min.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title" th:text="#{services.header}">KLEINREPARATURBETRIEB - SERVICE BESTELLUNG</h4>
+                            <p th:text="#{services.subheader}">Klicken sie bitte auf einen Service , um den zu bestellen  </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row projects-holder">
+                     
+                        <div class="col-md-4 col-sm-6">
+                        	<form name="form1" method="get" th:action="@{/ordercreation/0}">
+                            	<a onclick="form1.submit();" >
+		                            <div class="project-item">
+		                                <img th:src="@{/resources/images/flicken.jpg}" alt="">
+		                                <div class="project-hover">
+		                                    <div class="inside">
+		                                        <h5 th:text="#{services.patch}">Flickschusterei</h5>
+		                                        <p th:text="#{services.patch.price}">Preis : 99,99€</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+                            	</a>
+                            </form>
+                        </div>
+                
+                        <div class="col-md-4 col-sm-6">
+                        	<form name="form2" method="get" th:action="@{/ordercreation/1}">
+                            	<a onclick="form2.submit();" >
+		                            <div class="project-item">
+		                                <img th:src="@{/resources/images/sew.jpg}" alt="">
+		                                <div class="project-hover">
+		                                    <div class="inside">
+		                                        <h5 th:text="#{services.sew}">Nähservice</h5>
+		                                        <p th:text="#{services.sew.price}">Preis : 65,99€</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+                            	</a>
+                            </form>
+                        </div>
+                        				
+						<div class="col-md-4 col-sm-6">
+                        	<form name="form3" method="get" th:action="@{/ordercreation/2}">
+                            	<a onclick="form3.submit();" >
+		                            <div class="project-item">
+		                                <img th:src="@{/resources/images/keys.jpg}" alt="">
+		                                <div class="project-hover">
+		                                    <div class="inside">
+		                                        <h5 th:text="#{services.key}">Schlüsseldienst</h5>
+		                                        <p th:text="#{services.key.price}">Preis : 49,99€</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+                            	</a>
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6">
+                        	<form name="form4" method="get" th:action="@{/ordercreation/3}">
+                            	<a onclick="form4.submit();" >
+		                            <div class="project-item">
+		                                <img th:src="@{/resources/images/cleanservice.jpg}" alt="">
+		                                <div class="project-hover">
+		                                    <div class="inside">
+		                                        <h5 th:text="#{services.clean}">Schnellreinigung und Heißmangel</h5>
+		                                        <p th:text="#{services.clean.price}">Preis : 19,99€</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+                            	</a>
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6">
+                        	<form name="form5" method="get" th:action="@{/ordercreation/5}">
+                            	<a onclick="form5.submit();" >
+		                            <div class="project-item">
+		                                <img th:src="@{/resources/images/scheren.jpg}" alt="">
+		                                <div class="project-hover">
+		                                    <div class="inside">
+		                                        <h5 th:text="#{services.grind}">Scherenschleiferei</h5>
+		                                        <p th:text="#{services.grind.price}">Preis : 59,99€</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+                            	</a>
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6">
+                        	<form name="form6" method="get" th:action="@{/ordercreation/4}">
+                            	<a onclick="form6.submit();" >
+		                            <div class="project-item">
+		                                <img th:src="@{/resources/images/electronik.jpg}" alt="">
+		                                <div class="project-hover">
+		                                    <div class="inside">
+		                                        <h5 th:text="#{services.elektro}">Elektrowerkstatt</h5>
+		                                        <p th:text="#{services.elektro.price}">Preis : 229,99€</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+                            	</a>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <hr>
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+
+                </div>
+
+            </div>
+        </div>
+
+
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+
+    </body>
+</html>

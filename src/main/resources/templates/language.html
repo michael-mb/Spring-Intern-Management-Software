@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+			        <!-- SIDEBAR -->
+        <nav th:fragment="language" >
+			<span><a th:href="@{'/?lang=en'}">EN</a> |
+					<a th:href="@{'/?lang=de'}">DE</a></span>
+			
+		</nav>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kickstart.material</OriginalElement>
+  <nodes>
+    <node x="462.5571741854635" y="997.0">kickstart.material.MaterialController</node>
+    <node x="36.0" y="329.0">kickstart.material.MaterialUnitTests</node>
+    <node x="959.888596491228" y="1140.5">kickstart.material.MaterialInitializer</node>
+    <node x="853.2283521303259" y="373.5">kickstart.material.MaterialRepository</node>
+    <node x="322.6052631578946" y="329.0">kickstart.material.MaterialUpdateForm</node>
+    <node x="134.5571741854635" y="1097.0">kickstart.material.MaterialManagementUnitTests</node>
+    <node x="696.8052631578947" y="519.0">kickstart.material.MaterialManagement</node>
+    <node x="559.0969298245614" y="0.0">kickstart.material.Material</node>
+    <node x="415.18859649122805" y="1463.0">kickstart.material.MaterialControllerIntegrationTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.material.MaterialUpdateForm">
+      <point x="-180.41666666666674" y="-214.0" />
+      <point x="732.888596491228" y="499.0" />
+      <point x="575.6052631578947" y="499.0" />
+      <point x="115.00000000000006" y="70.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.material.Material">
+      <point x="180.41666666666674" y="-214.0" />
+      <point x="1093.7219298245614" y="499.0" />
+      <point x="1125.4105263157894" y="499.0" />
+      <point x="1125.4105263157894" y="279.0" />
+      <point x="730.7755012531328" y="279.0" />
+      <point x="67.17857142857144" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.Material">
+      <point x="123.33333333333337" y="-169.0" />
+      <point x="686.5219298245614" y="1443.0" />
+      <point x="1266.3885964912279" y="1443.0" />
+      <point x="1266.3885964912279" y="259.0" />
+      <point x="760.6326441102756" y="259.0" />
+      <point x="97.03571428571422" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.MaterialManagement">
+      <point x="74.0" y="-169.0" />
+      <point x="637.188596491228" y="1433.0" />
+      <point x="949.388596491228" y="1433.0" />
+      <point x="36.08333333333326" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.material.MaterialUpdateForm">
+      <point x="74.0" y="-103.0" />
+      <point x="356.5571741854635" y="977.0" />
+      <point x="329.4738408521302" y="977.0" />
+      <point x="329.4738408521302" y="499.0" />
+      <point x="391.6052631578946" y="499.0" />
+      <point x="-69.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.material.MaterialManagement">
+      <point x="89.60000000000002" y="-203.0" />
+      <point x="776.1571741854635" y="977.0" />
+      <point x="805.0552631578947" y="977.0" />
+      <point x="-108.25" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.material.MaterialManagement">
+      <point x="123.33333333333337" y="-103.0" />
+      <point x="405.8905075187969" y="977.0" />
+      <point x="732.888596491228" y="977.0" />
+      <point x="-180.41666666666674" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialInitializer" target="kickstart.material.Material">
+      <point x="98.66666666666674" y="-59.5" />
+      <point x="1206.5552631578948" y="977.0" />
+      <point x="1189.25" y="977.0" />
+      <point x="1189.25" y="269.0" />
+      <point x="745.7040726817041" y="269.0" />
+      <point x="82.10714285714278" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialRepository" target="kickstart.material.Material">
+      <point x="0.0" y="-25.5" />
+      <point x="967.7283521303259" y="289.0" />
+      <point x="715.8469298245614" y="289.0" />
+      <point x="52.25" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.material.Material">
+      <point x="0.0" y="-203.0" />
+      <point x="686.5571741854635" y="967.0" />
+      <point x="669.0969298245614" y="967.0" />
+      <point x="669.0969298245614" y="309.0" />
+      <point x="671.061215538847" y="309.0" />
+      <point x="7.464285714285666" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.material.MaterialUpdateForm">
+      <point x="-179.20000000000005" y="-203.0" />
+      <point x="507.35717418546346" y="967.0" />
+      <point x="559.6283521303258" y="967.0" />
+      <point x="559.6283521303258" y="499.0" />
+      <point x="529.6052631578946" y="499.0" />
+      <point x="69.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.MaterialController">
+      <point x="24.66666666666663" y="-169.0" />
+      <point x="587.8552631578947" y="1423.0" />
+      <point x="686.5571741854635" y="1423.0" />
+      <point x="0.0" y="203.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.MaterialUpdateForm">
+      <point x="-24.666666666666742" y="-169.0" />
+      <point x="538.5219298245613" y="1423.0" />
+      <point x="452.0571741854635" y="1423.0" />
+      <point x="452.0571741854635" y="499.0" />
+      <point x="483.6052631578946" y="499.0" />
+      <point x="23.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialUnitTests" target="kickstart.material.Material">
+      <point x="46.25" y="-70.0" />
+      <point x="174.75" y="269.0" />
+      <point x="596.4183583959899" y="269.0" />
+      <point x="-67.17857142857144" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.material.MaterialRepository">
+      <point x="108.25" y="-214.0" />
+      <point x="1021.5552631578947" y="499.0" />
+      <point x="1024.978352130326" y="499.0" />
+      <point x="57.25" y="25.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialInitializer" target="kickstart.material.MaterialManagement">
+      <point x="0.0" y="-59.5" />
+      <point x="1107.8885964912279" y="977.0" />
+      <point x="1093.7219298245614" y="977.0" />
+      <point x="180.41666666666674" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.material.Material">
+      <point x="-74.0" y="-103.0" />
+      <point x="208.5571741854635" y="977.0" />
+      <point x="242.49999999999994" y="977.0" />
+      <point x="242.49999999999994" y="289.0" />
+      <point x="626.2755012531328" y="289.0" />
+      <point x="-37.321428571428555" y="114.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="180.5" y="199.5" />
+  <SelectedNodes>
+    <node>kickstart.material.MaterialController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

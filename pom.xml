@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>swt19w23</artifactId>
+	<version>1.0.0.BUILD-SNAPSHOT</version>
+
+	<name>swt19w23</name>
+
+	<parent>
+		<groupId>de.tudresden.inf.st.lab</groupId>
+		<artifactId>st-lab-parent</artifactId>
+		<version>2.2.0.RELEASE</version>
+	</parent>
+
+	<properties>
+		<java.version>11</java.version>
+		<salespoint.version>7.2.1.RELEASE</salespoint.version>
+	</properties>
+
+	<dependencies>
+
+		<!--
+			Additional project dependencies go here.
+
+			BUT PLEASE NOTE!
+
+			The parent pom that is referenced above already includes *everything*
+			that is needed for the lab: Spring, Salespoint, Hibernate, JUnit, etc.
+
+			You can list the current dependencies and their versions using the
+			`mvn dependency:list` command.
+
+			Use Maven Central for package search (https://search.maven.org/).
+		-->
+
+	</dependencies>
+
+	<repositories>
+
+		<repository>
+			<id>spring-libs-milestone</id>
+			<url>https://repo.spring.io/libs-milestone</url>
+		</repository>
+
+		<repository>
+			<id>salespointframework</id>
+			<url>https://www.st.inf.tu-dresden.de/SalesPoint/repository</url>
+		</repository>
+
+	</repositories>
+
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>spring-libs-milestone</id>
+			<url>https://repo.spring.io/libs-milestone</url>
+		</pluginRepository>
+
+	</pluginRepositories>
+
+</project>

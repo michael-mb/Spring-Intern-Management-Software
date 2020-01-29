@@ -1,0 +1,126 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Auftragdetails</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/orders.css}" rel="stylesheet"
+              href="../static/resources/css/orders.css" type="text/css"/>
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+              href="../static/resources/css/normalize.css" type="text/css"/>
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+              href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.css}" rel="stylesheet"
+              href="../static/resources/css/bootstrap.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+              href="../static/resources/css/templatemo-style.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap-grid.css}" rel="stylesheet"
+              href="../static/resources/css/bootstrap-grid.css" type="text/css"/>
+        <link th:href="@{/resources/css/orders.css}" rel="stylesheet"
+              href="../static/resources/css/orders.css" type="text/css"/>
+        <link th:href="@{/resources/css/print.css}" rel="stylesheet"
+        href="../static/resources/css/print.css" media="print" type="text/css"/>
+        
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title" th:text="#{orderpage.header}">KLEINREPARATURBETRIEB - Auftrag</h4>
+                            <p th:text="#{orderpage.subheader}">Hier bekommen sie einen Überblick über den Auftrag</p>
+                        </div>
+                    </div>
+                    
+                    	<div class="row projects-holder">
+					        <div  class="card w-50">
+					            <div class="card-body">
+                                    <h5 th:text="${order.skill}+ ' - ' + ${order.subcategory}" class="card-title">Card title</h5>
+                                    <p th:text="#{orderpage.creationsdate}+${order.date}" class="card-text p-card">content</p>
+                                    <p th:text="#{orderpage.finishdate}+${order.finishDateIntern}" class="card-text  p-card">content</p>
+                                    <p th:text="#{orderpage.customername}+${order.customerName}" class="card-text  p-card">content</p>
+                                    <p th:text="#{orderpage.customercontact}+${order.customerContact}" class="card-text  p-card">content</p>
+                                    <p th:text="#{orderpage.description}+${order.description}" class="card-text  p-card">content</p>
+                                    <p th:text="#{orderpage.status}+${order.status}" class="card-text  p-card status">content</p>
+                                    	<div th:if="${order.status} == ${created} " th:with="s=0" class="selectContent">
+							    			<div class="input-group-prepend">
+										 		<label class="input-group-text" for="inputGroupSelect01" th:text="#{orderpage.accept}">Auftrag akzeptieren?</label>
+										  	</div>	
+										  			  	
+										  	<a th:href="@{/acceptStatus/{id}(id=${order.order_id})}" class="btn btn-success statusbtn"><i class="fa fa-check-circle"></i></a>
+	                                        <a th:href="@{/declineStatus/{id}(id=${order.order_id})}"  class="btn btn-danger statusbtn"><i class="fa fa-minus-circle"></i></a>
+	                                        
+										</div>
+                                        <div th:if="${order.status} == ${done} " th:with="s=0" class="selectContent">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01" th:text="#{orderpage.pickup}">Auftrag abgeholt?</label>
+                                            </div>
+
+                                            <a th:href="@{/pickedupStatus/{id}(id=${order.order_id})}" class="btn btn-success statusbtn"><i class="fa fa-check-circle"></i></a>
+
+                                        </div>
+                                        <div th:if="${order.status} == ${stored} " th:with="s=0" class="selectContent">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01" th:text="#{orderpage.pickup}">Auftrag abgeholt?</label>
+                                            </div>
+
+                                            <a th:href="@{/pickedupStatus/{id}(id=${order.order_id})}" class="btn btn-success statusbtn"><i class="fa fa-check-circle"></i></a>
+
+                                        </div>
+									<p th:if="${order.status} == ${accepted} " th:text="#{orderpage.assignment}+${order.isAcceptedBy}" class="card-text  p-card">content</p>
+                                    <p th:if="(${order.status} == ${done})" th:text="#{orderpage.done}+${order.isAcceptedBy}" class="card-text  p-card">content</p>
+                                    <p th:if="(${order.status} == ${stored})" th:text="#{orderpage.done}+${order.isAcceptedBy}" class="card-text  p-card">content</p>
+                                    
+                                    <span>
+                                        <a th:href="@{/updateOrder/{id}(id=${order.order_id})}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                                        <a th:href="@{/deleteOrder/{id}(id=${order.order_id})}"  onclick="if (!(confirm('Wollen Sie wirklich dieses Components löschen ?'))) return false" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                    </span>
+					            </div>
+					        </div>
+					        <div class="py-3 px-5 text-center print-view">
+                            	<div class="mb-2" th:text="#{orderpage.print}">Auftrag drucken:</div>
+                            	<div class="h2 font-weight-light">
+                            		<a class="btn btn-success" onClick="window.print()">
+                            			<i class="fa fa-print white"></i>
+                            		</a>
+                            	</div>
+                        	</div>
+                        
+		                    <br>
+                        </div>
+                        
+                    </div>
+                    <hr>
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+        
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+
+    </body>
+</html>

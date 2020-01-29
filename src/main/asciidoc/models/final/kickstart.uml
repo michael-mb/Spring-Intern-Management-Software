@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kickstart</OriginalElement>
+  <nodes>
+    <node x="1542.6755608900612" y="730.0">kickstart.orders.SubCategory</node>
+    <node x="5176.467933617043" y="5205.0">kickstart.time.TimeSlotController</node>
+    <node x="2767.461642295972" y="1207.0">kickstart.orders.Orders</node>
+    <node x="6867.575194775431" y="2082.5">kickstart.staff.StaffDataInitializer</node>
+    <node x="698.0" y="6276.0">kickstart.controller.WelcomeControllerIntegrationTests</node>
+    <node x="2585.370733205063" y="3145.0">kickstart.orders.OrdersManagement</node>
+    <node x="7623.575194775431" y="2061.0">kickstart.staff.StaffManagementUnitTests</node>
+    <node x="60.49346405228789" y="2083.0">kickstart.material.MaterialUnitTests</node>
+    <node x="3224.4884168103204" y="5205.0">kickstart.time.TimeSlotDataInitializer</node>
+    <node x="8261.07519477543" y="2725.5">kickstart.room.RoomRepository</node>
+    <node x="1998.397432306257" y="5139.5">kickstart.Accountancy.AccountancyManagementUnitTests</node>
+    <node x="5095.717933617043" y="5904.0">kickstart.time.TimeSlotControllerIntegrationTests</node>
+    <node x="7170.708338247079" y="3333.0">kickstart.time.TimeSlotRepository</node>
+    <node x="543.4902683048426" y="1383.5">kickstart.material.Material</node>
+    <node x="6598.505573062559" y="1383.5">kickstart.staff.StaffManagement</node>
+    <node x="4683.038060890061" y="807.0">kickstart.orders.Status</node>
+    <node x="277.4934640522879" y="3155.5">kickstart.material.MaterialController</node>
+    <node x="5033.742093280908" y="1939.0">kickstart.Accountancy.AccountancyManagement</node>
+    <node x="6633.030573062559" y="873.0">kickstart.staff.StaffRepository</node>
+    <node x="317.0" y="6276.0">kickstart.controller.LanguageConfig</node>
+    <node x="3781.5849323062566" y="5227.5">kickstart.orders.OrdersManagementUnitTests</node>
+    <node x="2877.397432306257" y="4138.5">kickstart.orders.OrdersDataInitializer</node>
+    <node x="5108.938608776845" y="3277.5">kickstart.Accountancy.AccountancyControllerIntegrationTests</node>
+    <node x="4871.442490772275" y="3962.0">kickstart.time.TimeSlotManagement</node>
+    <node x="8705.57519477543" y="4150.0">kickstart.room.RoomManagementUnitTests</node>
+    <node x="6841.054745674237" y="5095.0">kickstart.staff.StaffController</node>
+    <node x="1138.6693443161744" y="2083.0">kickstart.material.MaterialUpdateForm</node>
+    <node x="5090.938608776845" y="2658.5">kickstart.Accountancy.AccountancyController</node>
+    <node x="7903.575194775431" y="784.5">kickstart.staff.StaffUnitTests</node>
+    <node x="831.0363211951458" y="2127.5">kickstart.material.MaterialRepository</node>
+    <node x="2750.9884168103204" y="5717.0">kickstart.orders.OrdersControllerIntegrationTests</node>
+    <node x="1238.0" y="6276.0">kickstart.Application</node>
+    <node x="6274.135037348273" y="5095.5">kickstart.time.TimeSlotManagementUnitTests</node>
+    <node x="992.1434640522889" y="2537.0">kickstart.material.MaterialManagement</node>
+    <node x="11.0" y="6400.0">kickstart.controller.ErrorControllerIntegrationTests</node>
+    <node x="0.0" y="6276.0">kickstart.controller.ErrorControllerImpl</node>
+    <node x="8437.616861442097" y="773.0">kickstart.staff.RegistrationForm</node>
+    <node x="7328.615844503505" y="281.0">kickstart.staff.Staff</node>
+    <node x="4471.884932306257" y="2659.0">kickstart.orders.OrderCreationFrom</node>
+    <node x="5455.938608776844" y="2680.5">kickstart.Accountancy.AccountancyDataInitializer</node>
+    <node x="976.0" y="6276.0">kickstart.controller.SecurityConfig</node>
+    <node x="8436.792245674238" y="2094.0">kickstart.room.Room</node>
+    <node x="899.1773056992088" y="3255.5">kickstart.material.MaterialManagementUnitTests</node>
+    <node x="6288.167688519004" y="5750.0">kickstart.staff.StaffControllerIntegrationTests</node>
+    <node x="1766.397432306257" y="2006.0">kickstart.orders.OrdersUnitTests</node>
+    <node x="2362.397432306257" y="4974.0">kickstart.orders.OrdersController</node>
+    <node x="8286.167688519005" y="3299.0">kickstart.room.RoomManagement</node>
+    <node x="1219.127305699209" y="3299.0">kickstart.material.MaterialInitializer</node>
+    <node x="2758.586642295972" y="2725.5">kickstart.orders.OrdersRepository</node>
+    <node x="7276.575194775431" y="2637.0">kickstart.time.TimeSlot</node>
+    <node x="5014.629237360648" y="0.0">kickstart.staff.Skill</node>
+    <node x="8401.575194775432" y="4138.5">kickstart.room.RoomDataInitializer</node>
+    <node x="591.9273056992083" y="4029.0">kickstart.material.MaterialControllerIntegrationTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kickstart.Accountancy.AccountancyManagement" target="kickstart.orders.Orders">
+      <point x="-191.25" y="-214.0" />
+      <point x="5071.992093280908" y="1849.0" />
+      <point x="3116.540589664393" y="1849.0" />
+      <point x="159.5789473684208" y="291.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.material.MaterialUpdateForm">
+      <point x="126.85714285714312" y="-103.0" />
+      <point x="1174.034448556352" y="3125.0" />
+      <point x="1446.643464052289" y="3125.0" />
+      <point x="1446.643464052289" y="2407.0" />
+      <point x="1299.6693443161744" y="2407.0" />
+      <point x="23.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.room.RoomDataInitializer" target="kickstart.room.Room">
+      <point x="94.66666666666697" y="-59.5" />
+      <point x="8638.241861442099" y="3942.0" />
+      <point x="8683.855188519005" y="3942.0" />
+      <point x="8683.855188519005" y="2507.0" />
+      <point x="8529.092245674237" y="2507.0" />
+      <point x="21.300000000000182" y="59.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.staff.StaffManagement">
+      <point x="131.73333333333358" y="-301.5" />
+      <point x="2741.1307656395907" y="4724.0" />
+      <point x="4860.942490772275" y="4724.0" />
+      <point x="4860.942490772275" y="3842.0" />
+      <point x="5915.438608776844" y="3842.0" />
+      <point x="5915.438608776844" y="1879.0" />
+      <point x="6692.005573062559" y="1879.0" />
+      <point x="-93.5" y="114.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.orders.OrderCreationFrom">
+      <point x="0.0" y="-48.0" />
+      <point x="3932.5849323062566" y="3732.0" />
+      <point x="4743.938416810321" y="3732.0" />
+      <point x="4743.938416810321" y="3025.0" />
+      <point x="4685.284932306256" y="3025.0" />
+      <point x="19.399999999999636" y="92.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.material.MaterialController">
+      <point x="-197.60000000000036" y="-301.5" />
+      <point x="2411.7974323062567" y="4654.0" />
+      <point x="485.91013071895395" y="4654.0" />
+      <point x="485.91013071895395" y="3942.0" />
+      <point x="352.16013071895486" y="3942.0" />
+      <point x="-149.33333333333303" y="203.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.Orders">
+      <point x="55.90909090909099" y="-213.5" />
+      <point x="2948.779824114154" y="3035.0" />
+      <point x="3027.9353265064983" y="3035.0" />
+      <point x="3027.9353265064983" y="1919.0" />
+      <point x="2976.9090107170246" y="1919.0" />
+      <point x="19.947368421052488" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.staff.Skill">
+      <point x="43.14285714285688" y="-48.0" />
+      <point x="3975.7277894491135" y="4694.0" />
+      <point x="4296.558649125354" y="4694.0" />
+      <point x="4296.558649125354" y="3792.0" />
+      <point x="4931.929593280908" y="3792.0" />
+      <point x="4931.929593280908" y="261.0" />
+      <point x="5056.629237360648" y="261.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.orders.OrderCreationFrom">
+      <point x="-66.45833333333326" y="-224.0" />
+      <point x="6381.209355185671" y="5617.0" />
+      <point x="4094.0849323062566" y="5617.0" />
+      <point x="4094.0849323062566" y="3742.0" />
+      <point x="4830.188416810321" y="3742.0" />
+      <point x="4830.188416810321" y="3015.0" />
+      <point x="4724.084932306257" y="3015.0" />
+      <point x="58.19999999999982" y="92.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.staff.Staff">
+      <point x="79.66666666666652" y="-236.0" />
+      <point x="5429.109157438942" y="3872.0" />
+      <point x="6216.021942110177" y="3872.0" />
+      <point x="6216.021942110177" y="3095.0" />
+      <point x="7266.075194775431" y="3095.0" />
+      <point x="7266.075194775431" y="690.0" />
+      <point x="7492.346613734275" y="690.0" />
+      <point x="-29.769230769230944" y="169.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="-32.25" y="-180.0" />
+      <point x="6413.885037348273" y="4514.0" />
+      <point x="4393.799633629418" y="4514.0" />
+      <point x="4393.799633629418" y="3812.0" />
+      <point x="5069.438608776845" y="3812.0" />
+      <point x="5069.438608776845" y="2497.0" />
+      <point x="5244.117093280908" y="2497.0" />
+      <point x="-19.125" y="214.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotRepository" target="kickstart.time.TimeSlot">
+      <point x="0.0" y="-25.5" />
+      <point x="7287.208338247079" y="3125.0" />
+      <point x="7374.075194775431" y="3125.0" />
+      <point x="-58.5" y="114.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersUnitTests" target="kickstart.staff.Skill">
+      <point x="-42.19999999999982" y="-147.0" />
+      <point x="1829.6974323062573" y="1819.0" />
+      <point x="2003.2835222730969" y="1819.0" />
+      <point x="2003.2835222730969" y="211.0" />
+      <point x="5031.923355007708" y="211.0" />
+      <point x="-24.705882352941444" y="80.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotDataInitializer" target="kickstart.orders.Orders">
+      <point x="0.0" y="-70.5" />
+      <point x="3435.9884168103204" y="1909.0" />
+      <point x="2996.856379138077" y="1909.0" />
+      <point x="39.894736842104976" y="291.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagement" target="kickstart.staff.StaffManagement">
+      <point x="114.75" y="-214.0" />
+      <point x="5377.992093280908" y="1849.0" />
+      <point x="6611.862715919702" y="1849.0" />
+      <point x="-173.6428571428571" y="114.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffController" target="kickstart.staff.StaffManagement">
+      <point x="25.8125" y="-180.5" />
+      <point x="7073.367245674237" y="4454.0" />
+      <point x="6952.115844503505" y="4454.0" />
+      <point x="6952.115844503505" y="3075.0" />
+      <point x="6857.075194775431" y="3075.0" />
+      <point x="6857.075194775431" y="1919.0" />
+      <point x="6852.291287348273" y="1919.0" />
+      <point x="66.78571428571422" y="114.5" />
+    </edge>
+    <edge source="kickstart.orders.OrderCreationFrom" target="kickstart.staff.Skill">
+      <point x="161.66666666666697" y="-92.0" />
+      <point x="4827.551598972924" y="2437.0" />
+      <point x="4926.98841681032" y="2437.0" />
+      <point x="4926.98841681032" y="251.0" />
+      <point x="5051.688060890061" y="251.0" />
+      <point x="-4.941176470588289" y="80.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffDataInitializer" target="kickstart.staff.StaffManagement">
+      <point x="0.0" y="-70.5" />
+      <point x="7061.575194775431" y="1909.0" />
+      <point x="6905.719858776845" y="1909.0" />
+      <point x="120.21428571428578" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.material.Material">
+      <point x="-108.25" y="-214.0" />
+      <point x="1100.393464052289" y="2497.0" />
+      <point x="1070.5363211951458" y="2497.0" />
+      <point x="1070.5363211951458" y="1869.0" />
+      <point x="715.1688397334142" y="1869.0" />
+      <point x="67.17857142857156" y="114.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffManagement" target="kickstart.staff.Staff">
+      <point x="-149.60000000000036" y="-114.5" />
+      <point x="6635.905573062559" y="1187.0" />
+      <point x="6622.530573062559" y="1187.0" />
+      <point x="6622.530573062559" y="660.0" />
+      <point x="7403.038921426582" y="660.0" />
+      <point x="-119.07692307692332" y="169.5" />
+    </edge>
+    <edge source="kickstart.staff.RegistrationForm" target="kickstart.staff.Skill">
+      <point x="152.75" y="-125.5" />
+      <point x="8895.866861442097" y="710.0" />
+      <point x="8874.930176237162" y="710.0" />
+      <point x="8874.930176237162" y="191.0" />
+      <point x="5091.217472654767" y="191.0" />
+      <point x="34.58823529411802" y="80.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.OrdersManagement">
+      <point x="0.0" y="-257.0" />
+      <point x="2901.9884168103204" y="5657.0" />
+      <point x="2866.897432306257" y="5657.0" />
+      <point x="2866.897432306257" y="3942.0" />
+      <point x="2713.495733205063" y="3942.0" />
+      <point x="-179.375" y="213.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffController" target="kickstart.staff.RegistrationForm">
+      <point x="180.6875" y="-180.5" />
+      <point x="7228.242245674237" y="4954.0" />
+      <point x="9117.91894477543" y="4954.0" />
+      <point x="9117.91894477543" y="1177.0" />
+      <point x="8811.005750330985" y="1177.0" />
+      <point x="67.88888888888869" y="125.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.room.Room">
+      <point x="345.2222222222222" y="-236.0" />
+      <point x="5694.664712994498" y="3922.0" />
+      <point x="8239.57519477543" y="3922.0" />
+      <point x="8239.57519477543" y="2497.0" />
+      <point x="8472.292245674238" y="2497.0" />
+      <point x="-35.5" y="59.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagement" target="kickstart.staff.Staff">
+      <point x="38.25" y="-214.0" />
+      <point x="5301.492093280908" y="1919.0" />
+      <point x="5298.438608776845" y="1919.0" />
+      <point x="5298.438608776845" y="640.0" />
+      <point x="7343.500459888121" y="640.0" />
+      <point x="-178.6153846153843" y="169.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.orders.SubCategory">
+      <point x="0.0" y="-103.0" />
+      <point x="1047.1773056992088" y="3075.0" />
+      <point x="751.4934640522888" y="3075.0" />
+      <point x="751.4934640522888" y="2507.0" />
+      <point x="1107.018464052289" y="2507.0" />
+      <point x="1107.018464052289" y="1167.0" />
+      <point x="1583.4255608900612" y="1167.0" />
+      <point x="-40.75" y="168.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.time.TimeSlotManagement">
+      <point x="-13.291666666666515" y="-224.0" />
+      <point x="6434.376021852337" y="5597.0" />
+      <point x="5522.289449112979" y="5597.0" />
+      <point x="5522.289449112979" y="4834.0" />
+      <point x="5588.442490772275" y="4834.0" />
+      <point x="239.0" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.orders.OrdersManagement">
+      <point x="-398.33333333333303" y="-236.0" />
+      <point x="4951.109157438943" y="3652.0" />
+      <point x="3123.495733205063" y="3652.0" />
+      <point x="230.625" y="213.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.staff.Skill">
+      <point x="96.75" y="-180.0" />
+      <point x="6542.885037348273" y="4914.0" />
+      <point x="8211.07519477543" y="4914.0" />
+      <point x="8211.07519477543" y="211.0" />
+      <point x="5081.335119713591" y="211.0" />
+      <point x="24.705882352941444" y="80.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.time.TimeSlot">
+      <point x="230.53333333333376" y="-301.5" />
+      <point x="2839.930765639591" y="4844.0" />
+      <point x="7544.1676885190045" y="4844.0" />
+      <point x="7544.1676885190045" y="3125.0" />
+      <point x="7413.075194775431" y="3125.0" />
+      <point x="-19.5" y="114.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyDataInitializer" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="4.547473508864641E-13" y="-70.5" />
+      <point x="5669.438608776845" y="2497.0" />
+      <point x="5473.617093280908" y="2497.0" />
+      <point x="210.375" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.orders.SubCategory">
+      <point x="64.94999999999982" y="-214.0" />
+      <point x="1273.5934640522887" y="2427.0" />
+      <point x="1425.1693443161744" y="2427.0" />
+      <point x="1425.1693443161744" y="1177.0" />
+      <point x="1592.481116445616" y="1177.0" />
+      <point x="-31.694444444445253" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.SubCategory">
+      <point x="-167.72727272727298" y="-213.5" />
+      <point x="2725.14346047779" y="2995.0" />
+      <point x="1735.8418767507023" y="2995.0" />
+      <point x="1735.8418767507023" y="1137.0" />
+      <point x="1655.8700053345065" y="1137.0" />
+      <point x="31.694444444445253" y="168.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffManagementUnitTests" target="kickstart.staff.Staff">
+      <point x="0.0" y="-92.0" />
+      <point x="7753.075194775431" y="700.0" />
+      <point x="7611.423536811199" y="700.0" />
+      <point x="89.30769230769238" y="169.5" />
+    </edge>
+    <edge source="kickstart.orders.Orders" target="kickstart.orders.SubCategory">
+      <point x="-94.75" y="-291.0" />
+      <point x="2862.211642295972" y="1087.0" />
+      <point x="1701.1477831122838" y="1087.0" />
+      <point x="76.97222222222263" y="168.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.orders.SubCategory">
+      <point x="-191.9999999999991" y="-203.0" />
+      <point x="309.4934640522888" y="3125.0" />
+      <point x="38.99346405228789" y="3125.0" />
+      <point x="38.99346405228789" y="1147.0" />
+      <point x="1565.31444977895" y="1147.0" />
+      <point x="-58.86111111111131" y="168.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialUnitTests" target="kickstart.material.Material">
+      <point x="46.25" y="-70.0" />
+      <point x="199.2434640522879" y="1879.0" />
+      <point x="565.8831254476995" y="1879.0" />
+      <point x="-82.10714285714312" y="114.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.SubCategory">
+      <point x="-131.73333333333358" y="-301.5" />
+      <point x="2477.6640989729235" y="4634.0" />
+      <point x="1708.6752100840345" y="4634.0" />
+      <point x="1708.6752100840345" y="1167.0" />
+      <point x="1628.7033386678386" y="1167.0" />
+      <point x="4.527777777777374" y="168.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffController" target="kickstart.time.TimeSlot">
+      <point x="77.4375" y="-180.5" />
+      <point x="7124.992245674237" y="4884.0" />
+      <point x="7602.075194775431" y="4884.0" />
+      <point x="7602.075194775431" y="3085.0" />
+      <point x="7569.075194775431" y="3085.0" />
+      <point x="136.5" y="114.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersDataInitializer" target="kickstart.orders.OrdersManagement">
+      <point x="-72.75" y="-59.5" />
+      <point x="2950.147432306257" y="3932.0" />
+      <point x="2764.745733205063" y="3932.0" />
+      <point x="-128.125" y="213.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.material.Material">
+      <point x="-42.285714285714675" y="-103.0" />
+      <point x="1004.8915914134941" y="3085.0" />
+      <point x="740.4934640522888" y="3085.0" />
+      <point x="740.4934640522888" y="1899.0" />
+      <point x="670.3831254476995" y="1899.0" />
+      <point x="22.392857142856883" y="114.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffManagementUnitTests" target="kickstart.staff.StaffManagement">
+      <point x="-51.799999999999955" y="-92.0" />
+      <point x="7701.2751947754305" y="1889.0" />
+      <point x="6959.148430205416" y="1889.0" />
+      <point x="173.64285714285734" y="114.5" />
+    </edge>
+    <edge source="kickstart.staff.Staff" target="kickstart.staff.Skill">
+      <point x="96.75" y="-169.5" />
+      <point x="7618.865844503505" y="231.0" />
+      <point x="5071.452766772414" y="231.0" />
+      <point x="14.823529411764866" y="80.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.OrderCreationFrom">
+      <point x="65.86666666666679" y="-301.5" />
+      <point x="2675.264098972924" y="4694.0" />
+      <point x="3749.0849323062566" y="4694.0" />
+      <point x="3749.0849323062566" y="3692.0" />
+      <point x="4620.041545394124" y="3692.0" />
+      <point x="4620.041545394124" y="3065.0" />
+      <point x="4530.084932306257" y="3065.0" />
+      <point x="-135.80000000000018" y="92.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.staff.Skill">
+      <point x="-230.53333333333376" y="-301.5" />
+      <point x="2378.8640989729233" y="4664.0" />
+      <point x="9.882352941176578" y="4664.0" />
+      <point x="9.882352941176578" y="201.0" />
+      <point x="5026.982178537119" y="201.0" />
+      <point x="-29.647058823529733" y="80.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.Status">
+      <point x="32.933333333333394" y="-301.5" />
+      <point x="2642.3307656395905" y="4684.0" />
+      <point x="3679.9884168103204" y="4684.0" />
+      <point x="3679.9884168103204" y="3672.0" />
+      <point x="4439.384932306257" y="3672.0" />
+      <point x="4439.384932306257" y="1157.0" />
+      <point x="4716.638060890062" y="1157.0" />
+      <point x="-14.399999999999636" y="91.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.staff.Staff">
+      <point x="75.25" y="-180.0" />
+      <point x="6521.385037348273" y="4894.0" />
+      <point x="7613.075194775431" y="4894.0" />
+      <point x="7613.075194775431" y="710.0" />
+      <point x="7581.654306041967" y="710.0" />
+      <point x="59.53846153846143" y="169.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffManagement" target="kickstart.staff.RegistrationForm">
+      <point x="149.5999999999999" y="-114.5" />
+      <point x="6935.105573062559" y="1167.0" />
+      <point x="8471.561305886542" y="1167.0" />
+      <point x="-271.55555555555554" y="125.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.OrdersController">
+      <point x="-33.55555555555566" y="-257.0" />
+      <point x="2868.4328612547647" y="5667.0" />
+      <point x="2609.397432306257" y="5667.0" />
+      <point x="0.0" y="301.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.staff.Staff">
+      <point x="98.80000000000018" y="-301.5" />
+      <point x="2708.1974323062573" y="4714.0" />
+      <point x="4811.299633629418" y="4714.0" />
+      <point x="4811.299633629418" y="3822.0" />
+      <point x="5893.438608776844" y="3822.0" />
+      <point x="5893.438608776844" y="650.0" />
+      <point x="7373.269690657352" y="650.0" />
+      <point x="-148.8461538461538" y="169.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffController" target="kickstart.staff.Staff">
+      <point x="129.0625" y="-180.5" />
+      <point x="7176.617245674237" y="4904.0" />
+      <point x="7893.075194775431" y="4904.0" />
+      <point x="7893.075194775431" y="690.0" />
+      <point x="7641.192767580429" y="690.0" />
+      <point x="119.07692307692332" y="169.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.time.TimeSlot">
+      <point x="129.42857142857156" y="-48.0" />
+      <point x="4062.013503734828" y="4854.0" />
+      <point x="7555.1676885190045" y="4854.0" />
+      <point x="7555.1676885190045" y="3115.0" />
+      <point x="7452.075194775431" y="3115.0" />
+      <point x="19.5" y="114.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagementUnitTests" target="kickstart.material.MaterialManagement">
+      <point x="42.285714285714675" y="-103.0" />
+      <point x="1089.4630199849234" y="3125.0" />
+      <point x="1100.393464052289" y="3125.0" />
+      <point x="-108.25" y="214.0" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.staff.RegistrationForm">
+      <point x="119.625" y="-224.0" />
+      <point x="6567.292688519004" y="5687.0" />
+      <point x="9163.57519477543" y="5687.0" />
+      <point x="9163.57519477543" y="1147.0" />
+      <point x="9014.672416997651" y="1147.0" />
+      <point x="271.55555555555566" y="125.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.orders.OrderCreationFrom">
+      <point x="-96.75" y="-180.0" />
+      <point x="6349.385037348273" y="4544.0" />
+      <point x="4245.98806089006" y="4544.0" />
+      <point x="4245.98806089006" y="3762.0" />
+      <point x="4852.188416810321" y="3762.0" />
+      <point x="4852.188416810321" y="2995.0" />
+      <point x="4801.684932306257" y="2995.0" />
+      <point x="135.80000000000018" y="92.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.material.Material">
+      <point x="-63.99999999999909" y="-203.0" />
+      <point x="437.4934640522888" y="3115.0" />
+      <point x="516.9934640522879" y="3115.0" />
+      <point x="516.9934640522879" y="1909.0" />
+      <point x="610.6688397334142" y="1909.0" />
+      <point x="-37.32142857142844" y="114.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyDataInitializer" target="kickstart.staff.StaffDataInitializer">
+      <point x="142.33333333333348" y="-70.5" />
+      <point x="5811.771942110178" y="2517.0" />
+      <point x="6964.575194775431" y="2517.0" />
+      <point x="-97.0" y="70.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.staff.StaffManagement">
+      <point x="13.291666666666742" y="-224.0" />
+      <point x="6460.959355185671" y="5647.0" />
+      <point x="6739.481444775431" y="5647.0" />
+      <point x="6739.481444775431" y="1919.0" />
+      <point x="6798.862715919702" y="1919.0" />
+      <point x="13.357142857142662" y="114.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.staff.Skill">
+      <point x="-147.42857142857156" y="-136.0" />
+      <point x="2022.9688608776855" y="4954.0" />
+      <point x="4.941176470587379" y="4954.0" />
+      <point x="4.941176470587379" y="191.0" />
+      <point x="5022.041002066531" y="191.0" />
+      <point x="-34.58823529411802" y="80.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotDataInitializer" target="kickstart.orders.OrdersManagement">
+      <point x="-84.60000000000036" y="-70.5" />
+      <point x="3351.38841681032" y="4654.0" />
+      <point x="3250.1759168103204" y="4654.0" />
+      <point x="3250.1759168103204" y="3892.0" />
+      <point x="2969.745733205063" y="3892.0" />
+      <point x="76.875" y="213.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.staff.Skill">
+      <point x="-134.22222222222263" y="-257.0" />
+      <point x="2767.7661945880977" y="5697.0" />
+      <point x="0.0" y="5697.0" />
+      <point x="0.0" y="181.0" />
+      <point x="5017.099825595942" y="181.0" />
+      <point x="-39.52941176470631" y="80.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.time.TimeSlotRepository">
+      <point x="239.0" y="-236.0" />
+      <point x="5588.442490772275" y="3902.0" />
+      <point x="7228.958338247079" y="3902.0" />
+      <point x="-58.25" y="25.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotControllerIntegrationTests" target="kickstart.time.TimeSlotController">
+      <point x="75.5" y="-70.0" />
+      <point x="5322.217933617043" y="5697.0" />
+      <point x="5327.467933617043" y="5697.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.material.MaterialUpdateForm">
+      <point x="21.649999999999636" y="-214.0" />
+      <point x="1230.2934640522885" y="2517.0" />
+      <point x="1207.6693443161744" y="2517.0" />
+      <point x="-69.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.room.RoomManagementUnitTests" target="kickstart.room.Room">
+      <point x="102.375" y="-48.0" />
+      <point x="8944.45019477543" y="3942.0" />
+      <point x="8887.20019477543" y="3942.0" />
+      <point x="8887.20019477543" y="2477.0" />
+      <point x="8571.692245674236" y="2477.0" />
+      <point x="63.899999999999636" y="59.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.Material">
+      <point x="-42.285714285713766" y="-169.0" />
+      <point x="697.6415914134946" y="3912.0" />
+      <point x="266.9934640522879" y="3912.0" />
+      <point x="266.9934640522879" y="1899.0" />
+      <point x="595.7402683048426" y="1899.0" />
+      <point x="-52.25" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.MaterialManagement">
+      <point x="42.285714285713766" y="-169.0" />
+      <point x="782.2130199849221" y="3922.0" />
+      <point x="1525.627305699209" y="3922.0" />
+      <point x="1525.627305699209" y="3035.0" />
+      <point x="1230.2934640522885" y="3035.0" />
+      <point x="21.649999999999636" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.material.MaterialManagement">
+      <point x="128.0000000000009" y="-203.0" />
+      <point x="629.4934640522888" y="3115.0" />
+      <point x="1013.7934640522885" y="3115.0" />
+      <point x="-194.85000000000036" y="214.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.orders.Status">
+      <point x="-53.75" y="-180.0" />
+      <point x="6392.385037348273" y="4524.0" />
+      <point x="4267.98806089006" y="4524.0" />
+      <point x="4267.98806089006" y="3782.0" />
+      <point x="4883.6384168103195" y="3782.0" />
+      <point x="4883.6384168103195" y="1187.0" />
+      <point x="4755.038060890061" y="1187.0" />
+      <point x="24.0" y="91.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagement" target="kickstart.orders.Status">
+      <point x="-114.75" y="-214.0" />
+      <point x="5148.492093280908" y="1839.0" />
+      <point x="4902.83841681032" y="1839.0" />
+      <point x="4902.83841681032" y="1167.0" />
+      <point x="4774.23806089006" y="1167.0" />
+      <point x="43.19999999999982" y="91.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.orders.SubCategory">
+      <point x="-146.20833333333326" y="-224.0" />
+      <point x="6301.459355185671" y="5647.0" />
+      <point x="1690.5640989729231" y="5647.0" />
+      <point x="1690.5640989729231" y="1187.0" />
+      <point x="1610.5922275567273" y="1187.0" />
+      <point x="-13.58333333333394" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersUnitTests" target="kickstart.orders.Orders">
+      <point x="0.0" y="-147.0" />
+      <point x="1871.897432306257" y="1829.0" />
+      <point x="2777.4353265064988" y="1829.0" />
+      <point x="-179.5263157894733" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.Orders">
+      <point x="-98.80000000000018" y="-301.5" />
+      <point x="2510.597432306257" y="4624.0" />
+      <point x="2413.9884168103204" y="4624.0" />
+      <point x="2413.9884168103204" y="1889.0" />
+      <point x="2897.1195370328146" y="1889.0" />
+      <point x="-59.842105263157464" y="291.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.orders.SubCategory">
+      <point x="-126.85714285714312" y="-169.0" />
+      <point x="613.0701628420652" y="3932.0" />
+      <point x="29.937908496733144" y="3932.0" />
+      <point x="29.937908496733144" y="1137.0" />
+      <point x="1556.2588942233951" y="1137.0" />
+      <point x="-67.91666666666606" y="168.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffManagement" target="kickstart.staff.StaffRepository">
+      <point x="-74.80000000000018" y="-114.5" />
+      <point x="6710.705573062559" y="1187.0" />
+      <point x="6685.780573062559" y="1187.0" />
+      <point x="-52.75" y="25.5" />
+    </edge>
+    <edge source="kickstart.room.RoomManagement" target="kickstart.room.Room">
+      <point x="90.33333333333348" y="-59.5" />
+      <point x="8512.001021852338" y="3125.0" />
+      <point x="8638.105188519005" y="3125.0" />
+      <point x="8638.105188519005" y="2517.0" />
+      <point x="8514.892245674237" y="2517.0" />
+      <point x="7.099999999999909" y="59.0" />
+    </edge>
+    <edge source="kickstart.staff.StaffController" target="kickstart.orders.Orders">
+      <point x="-77.4375" y="-180.5" />
+      <point x="6970.117245674237" y="4474.0" />
+      <point x="5837.942490772275" y="4474.0" />
+      <point x="5837.942490772275" y="3592.0" />
+      <point x="4417.384932306257" y="3592.0" />
+      <point x="4417.384932306257" y="1869.0" />
+      <point x="3076.645852822288" y="1869.0" />
+      <point x="119.68421052631584" y="291.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotController" target="kickstart.time.TimeSlotManagement">
+      <point x="-75.5" y="-70.5" />
+      <point x="5251.967933617043" y="4814.0" />
+      <point x="5451.8710622008475" y="4814.0" />
+      <point x="102.42857142857156" y="236.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialInitializer" target="kickstart.staff.StaffDataInitializer">
+      <point x="111.0" y="-59.5" />
+      <point x="1478.127305699209" y="3085.0" />
+      <point x="7158.575194775431" y="3085.0" />
+      <point x="97.0" y="70.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffDataInitializer" target="kickstart.staff.RegistrationForm">
+      <point x="129.33333333333348" y="-70.5" />
+      <point x="7190.908528108765" y="1919.0" />
+      <point x="7132.45795401494" y="1919.0" />
+      <point x="7132.45795401494" y="1177.0" />
+      <point x="8539.45019477543" y="1177.0" />
+      <point x="-203.66666666666652" y="125.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.material.MaterialRepository">
+      <point x="-151.55000000000018" y="-214.0" />
+      <point x="1057.0934640522887" y="2487.0" />
+      <point x="1002.7863211951458" y="2487.0" />
+      <point x="57.25" y="25.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.time.TimeSlotManagement">
+      <point x="164.66666666666697" y="-301.5" />
+      <point x="2774.064098972924" y="4744.0" />
+      <point x="4973.8710622008475" y="4744.0" />
+      <point x="-375.57142857142844" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.time.TimeSlotManagement">
+      <point x="-10.75" y="-180.0" />
+      <point x="6435.385037348273" y="4504.0" />
+      <point x="5656.72820505799" y="4504.0" />
+      <point x="307.2857142857142" y="236.0" />
+    </edge>
+    <edge source="kickstart.staff.StaffRepository" target="kickstart.staff.Staff">
+      <point x="0.0" y="-25.5" />
+      <point x="6738.530573062559" y="670.0" />
+      <point x="7432.808152195814" y="670.0" />
+      <point x="-89.30769230769238" y="169.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffController" target="kickstart.time.TimeSlotManagement">
+      <point x="-129.0625" y="-180.5" />
+      <point x="6918.492245674237" y="4484.0" />
+      <point x="5793.299633629418" y="4484.0" />
+      <point x="443.8571428571431" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.time.TimeSlot">
+      <point x="53.75" y="-180.0" />
+      <point x="6499.885037348273" y="4874.0" />
+      <point x="7591.075194775431" y="4874.0" />
+      <point x="7591.075194775431" y="3095.0" />
+      <point x="7530.075194775431" y="3095.0" />
+      <point x="97.5" y="114.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotDataInitializer" target="kickstart.time.TimeSlotManagement">
+      <point x="169.19999999999982" y="-70.5" />
+      <point x="3605.18841681032" y="4774.0" />
+      <point x="5178.72820505799" y="4774.0" />
+      <point x="-170.71428571428578" y="236.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialRepository" target="kickstart.material.Material">
+      <point x="0.0" y="-25.5" />
+      <point x="945.5363211951458" y="1879.0" />
+      <point x="700.2402683048426" y="1879.0" />
+      <point x="52.25" y="114.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialInitializer" target="kickstart.material.Material">
+      <point x="-111.0" y="-59.5" />
+      <point x="1256.127305699209" y="3065.0" />
+      <point x="820.5363211951458" y="3065.0" />
+      <point x="820.5363211951458" y="1889.0" />
+      <point x="685.3116968762711" y="1889.0" />
+      <point x="37.32142857142844" y="114.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.orders.OrdersManagement">
+      <point x="-119.625" y="-224.0" />
+      <point x="6328.042688519004" y="5637.0" />
+      <point x="3178.897432306257" y="5637.0" />
+      <point x="3178.897432306257" y="3912.0" />
+      <point x="2867.245733205063" y="3912.0" />
+      <point x="-25.625" y="213.5" />
+    </edge>
+    <edge source="kickstart.room.RoomManagementUnitTests" target="kickstart.room.RoomManagement">
+      <point x="-102.375" y="-48.0" />
+      <point x="8739.70019477543" y="3932.0" />
+      <point x="8534.58435518567" y="3932.0" />
+      <point x="112.91666666666663" y="59.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.orders.Orders">
+      <point x="-118.25" y="-180.0" />
+      <point x="6327.885037348273" y="4554.0" />
+      <point x="3668.9884168103204" y="4554.0" />
+      <point x="3668.9884168103204" y="1889.0" />
+      <point x="3036.751115980183" y="1889.0" />
+      <point x="79.78947368421086" y="291.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyController" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="86.0" y="-92.5" />
+      <point x="5348.938608776845" y="2517.0" />
+      <point x="5358.867093280908" y="2517.0" />
+      <point x="95.625" y="214.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.staff.StaffManagement">
+      <point x="10.75" y="-180.0" />
+      <point x="6456.885037348273" y="4834.0" />
+      <point x="6567.731444775431" y="4834.0" />
+      <point x="6567.731444775431" y="1909.0" />
+      <point x="6772.148430205416" y="1909.0" />
+      <point x="-13.357142857143117" y="114.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.time.TimeSlotManagement">
+      <point x="134.22222222222263" y="-257.0" />
+      <point x="3036.210639032543" y="5697.0" />
+      <point x="5142.90056022409" y="5697.0" />
+      <point x="5142.90056022409" y="4794.0" />
+      <point x="5315.299633629418" y="4794.0" />
+      <point x="-34.14285714285734" y="236.0" />
+    </edge>
+    <edge source="kickstart.staff.StaffUnitTests" target="kickstart.staff.Staff">
+      <point x="0.0" y="-114.0" />
+      <point x="8052.075194775431" y="670.0" />
+      <point x="7700.73122911889" y="670.0" />
+      <point x="178.61538461538476" y="169.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersUnitTests" target="kickstart.orders.SubCategory">
+      <point x="-84.39999999999964" y="-147.0" />
+      <point x="1787.4974323062575" y="1809.0" />
+      <point x="1992.2835222730969" y="1809.0" />
+      <point x="1992.2835222730969" y="1107.0" />
+      <point x="1683.0366720011725" y="1107.0" />
+      <point x="58.86111111111131" y="168.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.orders.OrdersManagement">
+      <point x="-139.75" y="-180.0" />
+      <point x="6306.385037348273" y="4564.0" />
+      <point x="3272.1759168103204" y="4564.0" />
+      <point x="3272.1759168103204" y="3872.0" />
+      <point x="3072.245733205063" y="3872.0" />
+      <point x="179.375" y="213.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="167.72727272727298" y="-213.5" />
+      <point x="3060.598005932336" y="3055.0" />
+      <point x="4450.384932306257" y="3055.0" />
+      <point x="4450.384932306257" y="2467.0" />
+      <point x="5129.367093280908" y="2467.0" />
+      <point x="-133.875" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialManagement" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="151.55000000000018" y="-214.0" />
+      <point x="1360.193464052289" y="2447.0" />
+      <point x="5052.867093280908" y="2447.0" />
+      <point x="-210.375" y="214.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.orders.OrdersManagement">
+      <point x="-86.28571428571468" y="-48.0" />
+      <point x="3846.299218020542" y="4584.0" />
+      <point x="3261.1759168103204" y="4584.0" />
+      <point x="3261.1759168103204" y="3882.0" />
+      <point x="3020.995733205063" y="3882.0" />
+      <point x="128.125" y="213.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.staff.StaffController">
+      <point x="39.875" y="-224.0" />
+      <point x="6487.542688519004" y="5657.0" />
+      <point x="7047.554745674237" y="5657.0" />
+      <point x="0.0" y="180.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersRepository" target="kickstart.orders.Orders">
+      <point x="0.0" y="-25.5" />
+      <point x="2870.086642295972" y="1919.0" />
+      <point x="2956.961642295972" y="1919.0" />
+      <point x="0.0" y="291.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.room.Room">
+      <point x="118.25" y="-180.0" />
+      <point x="6564.385037348273" y="4924.0" />
+      <point x="8250.57519477543" y="4924.0" />
+      <point x="8250.57519477543" y="2507.0" />
+      <point x="8486.492245674237" y="2507.0" />
+      <point x="-21.300000000000182" y="59.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.MaterialController">
+      <point x="0.0" y="-169.0" />
+      <point x="739.9273056992083" y="3902.0" />
+      <point x="650.8267973856209" y="3902.0" />
+      <point x="149.33333333333303" y="203.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlot" target="kickstart.orders.Orders">
+      <point x="-78.0" y="-114.0" />
+      <point x="7354.575194775431" y="2407.0" />
+      <point x="5827.191737360648" y="2407.0" />
+      <point x="5827.191737360648" y="1829.0" />
+      <point x="3136.4879580854454" y="1829.0" />
+      <point x="179.5263157894733" y="291.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.time.TimeSlot">
+      <point x="185.88888888888914" y="-236.0" />
+      <point x="5535.331379661165" y="3892.0" />
+      <point x="7160.208338247079" y="3892.0" />
+      <point x="7160.208338247079" y="3115.0" />
+      <point x="7335.075194775431" y="3115.0" />
+      <point x="-97.5" y="114.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.orders.SubCategory">
+      <point x="-161.25" y="-180.0" />
+      <point x="6284.885037348273" y="4574.0" />
+      <point x="1726.7863211951458" y="4574.0" />
+      <point x="1726.7863211951458" y="1147.0" />
+      <point x="1646.81444977895" y="1147.0" />
+      <point x="22.638888888888687" y="168.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.orders.Orders">
+      <point x="-93.04166666666652" y="-224.0" />
+      <point x="6354.626021852337" y="5627.0" />
+      <point x="3657.9884168103204" y="5627.0" />
+      <point x="3657.9884168103204" y="1899.0" />
+      <point x="3016.8037475591295" y="1899.0" />
+      <point x="59.842105263157464" y="291.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.room.RoomManagement">
+      <point x="139.75" y="-180.0" />
+      <point x="6585.885037348273" y="4934.0" />
+      <point x="8391.07519477543" y="4934.0" />
+      <point x="8391.07519477543" y="3942.0" />
+      <point x="8399.08435518567" y="3942.0" />
+      <point x="-22.583333333333485" y="59.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.OrdersRepository">
+      <point x="-55.90909090909099" y="-213.5" />
+      <point x="2836.961642295972" y="3075.0" />
+      <point x="2814.336642295972" y="3075.0" />
+      <point x="-55.75" y="25.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagement" target="kickstart.staff.Skill">
+      <point x="-38.25" y="-214.0" />
+      <point x="5224.992093280908" y="1919.0" />
+      <point x="5287.438608776845" y="1919.0" />
+      <point x="5287.438608776845" y="251.0" />
+      <point x="5061.570413831238" y="251.0" />
+      <point x="4.941176470588289" y="80.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.orders.SubCategory">
+      <point x="-129.42857142857156" y="-48.0" />
+      <point x="3803.156360877685" y="4594.0" />
+      <point x="1717.730765639591" y="4594.0" />
+      <point x="1717.730765639591" y="1157.0" />
+      <point x="1637.7588942233951" y="1157.0" />
+      <point x="13.58333333333394" y="168.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotControllerIntegrationTests" target="kickstart.time.TimeSlotManagement">
+      <point x="-75.5" y="-70.0" />
+      <point x="5171.217933617043" y="5697.0" />
+      <point x="5165.967933617043" y="5697.0" />
+      <point x="5165.967933617043" y="4804.0" />
+      <point x="5383.585347915133" y="4804.0" />
+      <point x="34.14285714285734" y="236.0" />
+    </edge>
+    <edge source="kickstart.orders.OrderCreationFrom" target="kickstart.orders.SubCategory">
+      <point x="-161.66666666666697" y="-92.0" />
+      <point x="4504.21826563959" y="2437.0" />
+      <point x="1744.897432306257" y="2437.0" />
+      <point x="1744.897432306257" y="1127.0" />
+      <point x="1664.9255608900612" y="1127.0" />
+      <point x="40.75" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.time.TimeSlotManagement">
+      <point x="86.28571428571468" y="-48.0" />
+      <point x="4018.8706465919713" y="4784.0" />
+      <point x="5247.013919343704" y="4784.0" />
+      <point x="-102.42857142857156" y="236.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.OrderCreationFrom">
+      <point x="67.11111111111131" y="-257.0" />
+      <point x="2969.0995279214317" y="5677.0" />
+      <point x="3760.0849323062566" y="5677.0" />
+      <point x="3760.0849323062566" y="3702.0" />
+      <point x="4631.041545394124" y="3702.0" />
+      <point x="4631.041545394124" y="3055.0" />
+      <point x="4568.884932306257" y="3055.0" />
+      <point x="-97.0" y="92.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.orders.Orders">
+      <point x="-238.99999999999955" y="-236.0" />
+      <point x="5110.442490772276" y="3622.0" />
+      <point x="4178.038060890061" y="3622.0" />
+      <point x="4178.038060890061" y="1879.0" />
+      <point x="3056.6984844012354" y="1879.0" />
+      <point x="99.73684210526335" y="291.0" />
+    </edge>
+    <edge source="kickstart.room.RoomManagement" target="kickstart.room.RoomRepository">
+      <point x="-90.33333333333326" y="-59.5" />
+      <point x="8331.33435518567" y="3125.0" />
+      <point x="8316.07519477543" y="3125.0" />
+      <point x="-55.0" y="25.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.room.RoomManagement">
+      <point x="398.3333333333335" y="-236.0" />
+      <point x="5747.775824105609" y="3932.0" />
+      <point x="8308.751021852338" y="3932.0" />
+      <point x="-112.91666666666663" y="59.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.Status">
+      <point x="33.55555555555566" y="-257.0" />
+      <point x="2935.543972365876" y="5667.0" />
+      <point x="3712.28841681032" y="5667.0" />
+      <point x="3712.28841681032" y="3682.0" />
+      <point x="4461.384932306257" y="3682.0" />
+      <point x="4461.384932306257" y="1167.0" />
+      <point x="4726.23806089006" y="1167.0" />
+      <point x="-4.800000000000182" y="91.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.orders.Orders">
+      <point x="0.0" y="-136.0" />
+      <point x="2170.397432306257" y="1879.0" />
+      <point x="2877.172168611761" y="1879.0" />
+      <point x="-79.78947368421086" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.Orders" target="kickstart.staff.Skill">
+      <point x="-31.58333333333303" y="-291.0" />
+      <point x="2925.378308962639" y="1187.0" />
+      <point x="2951.461642295972" y="1187.0" />
+      <point x="2951.461642295972" y="221.0" />
+      <point x="5036.864531478295" y="221.0" />
+      <point x="-19.764705882353155" y="80.5" />
+    </edge>
+    <edge source="kickstart.room.RoomRepository" target="kickstart.room.Room">
+      <point x="0.0" y="-25.5" />
+      <point x="8371.07519477543" y="2517.0" />
+      <point x="8500.692245674238" y="2517.0" />
+      <point x="-7.100000000000023" y="59.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.OrderCreationFrom">
+      <point x="223.63636363636397" y="-213.5" />
+      <point x="3116.507096841427" y="3065.0" />
+      <point x="4491.284932306256" y="3065.0" />
+      <point x="-174.60000000000036" y="92.0" />
+    </edge>
+    <edge source="kickstart.controller.ErrorControllerIntegrationTests" target="kickstart.controller.ErrorControllerImpl">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.orders.SubCategory">
+      <point x="-98.28571428571468" y="-136.0" />
+      <point x="2072.1117180205424" y="4944.0" />
+      <point x="1699.6196545284797" y="4944.0" />
+      <point x="1699.6196545284797" y="1177.0" />
+      <point x="1619.6477831122838" y="1177.0" />
+      <point x="-4.527777777777374" y="168.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlot" target="kickstart.staff.Staff">
+      <point x="-26.0" y="-114.0" />
+      <point x="7406.575194775431" y="2517.0" />
+      <point x="7427.075194775431" y="2517.0" />
+      <point x="7427.075194775431" y="700.0" />
+      <point x="7522.115844503505" y="700.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="-79.66666666666652" y="-236.0" />
+      <point x="5269.775824105609" y="3812.0" />
+      <point x="5445.438608776844" y="3812.0" />
+      <point x="5445.438608776844" y="2517.0" />
+      <point x="5397.117093280908" y="2517.0" />
+      <point x="133.875" y="214.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.OrdersManagement">
+      <point x="-32.933333333333394" y="-301.5" />
+      <point x="2576.4640989729237" y="4604.0" />
+      <point x="2448.5509168103204" y="4604.0" />
+      <point x="2448.5509168103204" y="3932.0" />
+      <point x="2610.995733205063" y="3932.0" />
+      <point x="-281.875" y="213.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.staff.RegistrationForm">
+      <point x="161.25" y="-180.0" />
+      <point x="6607.385037348273" y="4944.0" />
+      <point x="8989.07519477543" y="4944.0" />
+      <point x="8989.07519477543" y="1187.0" />
+      <point x="8743.116861442097" y="1187.0" />
+      <point x="0.0" y="125.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialControllerIntegrationTests" target="kickstart.material.MaterialUpdateForm">
+      <point x="84.57142857142935" y="-169.0" />
+      <point x="824.4987342706377" y="3932.0" />
+      <point x="1636.9648926237173" y="3932.0" />
+      <point x="1636.9648926237173" y="2397.0" />
+      <point x="1345.6693443161744" y="2397.0" />
+      <point x="69.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.staff.StaffManagementUnitTests" target="kickstart.staff.RegistrationForm">
+      <point x="51.80000000000018" y="-92.0" />
+      <point x="7804.875194775431" y="1909.0" />
+      <point x="8095.541287348273" y="1909.0" />
+      <point x="8095.541287348273" y="1187.0" />
+      <point x="8607.33908366432" y="1187.0" />
+      <point x="-135.77777777777737" y="125.5" />
+    </edge>
+    <edge source="kickstart.orders.Orders" target="kickstart.orders.Status">
+      <point x="94.75" y="-291.0" />
+      <point x="3051.711642295972" y="1127.0" />
+      <point x="4687.838060890061" y="1127.0" />
+      <point x="-43.19999999999982" y="91.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlot" target="kickstart.room.Room">
+      <point x="78.0" y="-114.0" />
+      <point x="7510.575194775431" y="2477.0" />
+      <point x="8443.892245674237" y="2477.0" />
+      <point x="-63.89999999999998" y="59.0" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.time.TimeSlotManagement">
+      <point x="147.42857142857156" y="-136.0" />
+      <point x="2317.8260037348286" y="4734.0" />
+      <point x="4905.585347915133" y="4734.0" />
+      <point x="-443.85714285714266" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.staff.StaffManagement">
+      <point x="26.555555555555657" y="-236.0" />
+      <point x="5375.998046327832" y="3862.0" />
+      <point x="6205.021942110177" y="3862.0" />
+      <point x="6205.021942110177" y="1899.0" />
+      <point x="6745.434144491131" y="1899.0" />
+      <point x="-40.07142857142844" y="114.5" />
+    </edge>
+    <edge source="kickstart.staff.StaffUnitTests" target="kickstart.staff.Skill">
+      <point x="99.0" y="-114.0" />
+      <point x="8151.075194775431" y="710.0" />
+      <point x="8074.070699112979" y="710.0" />
+      <point x="8074.070699112979" y="221.0" />
+      <point x="5076.393943243002" y="221.0" />
+      <point x="19.764705882353155" y="80.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.orders.Status">
+      <point x="-185.8888888888887" y="-236.0" />
+      <point x="5163.553601883386" y="3612.0" />
+      <point x="4893.23841681032" y="3612.0" />
+      <point x="4893.23841681032" y="1177.0" />
+      <point x="4764.638060890062" y="1177.0" />
+      <point x="33.600000000000364" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrderCreationFrom" target="kickstart.orders.Status">
+      <point x="-32.33333333333303" y="-92.0" />
+      <point x="4633.551598972924" y="2427.0" />
+      <point x="4714.051598972923" y="2427.0" />
+      <point x="4714.051598972923" y="1177.0" />
+      <point x="4735.838060890061" y="1177.0" />
+      <point x="4.800000000000182" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.Orders">
+      <point x="-67.11111111111131" y="-257.0" />
+      <point x="2834.877305699209" y="5677.0" />
+      <point x="1987.897432306257" y="5677.0" />
+      <point x="1987.897432306257" y="1859.0" />
+      <point x="2837.2774317696562" y="1859.0" />
+      <point x="-119.68421052631584" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.material.MaterialManagement">
+      <point x="-279.54545454545405" y="-213.5" />
+      <point x="2613.325278659609" y="3015.0" />
+      <point x="1316.893464052289" y="3015.0" />
+      <point x="108.25" y="214.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.SubCategory">
+      <point x="-100.66666666666697" y="-257.0" />
+      <point x="2801.3217501436534" y="5687.0" />
+      <point x="20.882352941176578" y="5687.0" />
+      <point x="20.882352941176578" y="1127.0" />
+      <point x="1547.2033386678386" y="1127.0" />
+      <point x="-76.97222222222263" y="168.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.material.MaterialManagement">
+      <point x="-292.11111111111086" y="-236.0" />
+      <point x="5057.331379661165" y="3632.0" />
+      <point x="3210.870733205063" y="3632.0" />
+      <point x="3210.870733205063" y="2985.0" />
+      <point x="1403.4934640522893" y="2985.0" />
+      <point x="194.85000000000036" y="214.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.Status">
+      <point x="111.81818181818198" y="-213.5" />
+      <point x="3004.688915023245" y="3045.0" />
+      <point x="3156.961642295972" y="3045.0" />
+      <point x="3156.961642295972" y="1147.0" />
+      <point x="4707.038060890061" y="1147.0" />
+      <point x="-24.0" y="91.5" />
+    </edge>
+    <edge source="kickstart.material.MaterialController" target="kickstart.material.MaterialUpdateForm">
+      <point x="64.00000000000091" y="-203.0" />
+      <point x="565.4934640522888" y="3105.0" />
+      <point x="707.4934640522879" y="3105.0" />
+      <point x="707.4934640522879" y="2517.0" />
+      <point x="1161.6693443161744" y="2517.0" />
+      <point x="-115.0" y="70.0" />
+    </edge>
+    <edge source="kickstart.staff.StaffControllerIntegrationTests" target="kickstart.staff.Skill">
+      <point x="146.20833333333348" y="-224.0" />
+      <point x="6593.876021852337" y="5697.0" />
+      <point x="9174.57519477543" y="5697.0" />
+      <point x="9174.57519477543" y="181.0" />
+      <point x="5096.158649125355" y="181.0" />
+      <point x="39.52941176470631" y="80.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyControllerIntegrationTests" target="kickstart.Accountancy.AccountancyController">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.staff.StaffManagement">
+      <point x="98.28571428571468" y="-136.0" />
+      <point x="2268.6831465919718" y="4704.0" />
+      <point x="4310.612133629418" y="4704.0" />
+      <point x="4310.612133629418" y="3832.0" />
+      <point x="5904.438608776844" y="3832.0" />
+      <point x="5904.438608776844" y="1869.0" />
+      <point x="6665.291287348273" y="1869.0" />
+      <point x="-120.21428571428578" y="114.5" />
+    </edge>
+    <edge source="kickstart.room.RoomDataInitializer" target="kickstart.room.RoomManagement">
+      <point x="0.0" y="-59.5" />
+      <point x="8543.575194775432" y="3942.0" />
+      <point x="8489.417688519005" y="3942.0" />
+      <point x="67.75" y="59.5" />
+    </edge>
+    <edge source="kickstart.Accountancy.AccountancyManagementUnitTests" target="kickstart.Accountancy.AccountancyManagement">
+      <point x="49.14285714285688" y="-136.0" />
+      <point x="2219.540289449114" y="4674.0" />
+      <point x="3346.9884168103204" y="4674.0" />
+      <point x="3346.9884168103204" y="3802.0" />
+      <point x="5058.438608776845" y="3802.0" />
+      <point x="5058.438608776845" y="2487.0" />
+      <point x="5205.867093280908" y="2487.0" />
+      <point x="-57.375" y="214.0" />
+    </edge>
+    <edge source="kickstart.material.MaterialInitializer" target="kickstart.material.MaterialManagement">
+      <point x="37.0" y="-59.5" />
+      <point x="1404.127305699209" y="3045.0" />
+      <point x="1186.9934640522893" y="3045.0" />
+      <point x="-21.649999999999636" y="214.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="421.0" y="236.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

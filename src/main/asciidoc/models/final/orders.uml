@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kickstart.orders</OriginalElement>
+  <nodes>
+    <node x="535.5" y="2222.0">kickstart.orders.OrdersDataInitializer</node>
+    <node x="292.9546957671952" y="77.0">kickstart.orders.Status</node>
+    <node x="308.91888962375015" y="1493.0">kickstart.orders.OrdersManagement</node>
+    <node x="644.5796957671952" y="0.0">kickstart.orders.SubCategory</node>
+    <node x="631.2791189006464" y="2653.0">kickstart.orders.OrdersControllerIntegrationTests</node>
+    <node x="329.6193966784242" y="477.0">kickstart.orders.Orders</node>
+    <node x="903.2142857142858" y="1204.0">kickstart.orders.OrderCreationFrom</node>
+    <node x="333.0985633450909" y="1270.5">kickstart.orders.OrdersRepository</node>
+    <node x="628.1331753380359" y="1149.0">kickstart.orders.OrdersUnitTests</node>
+    <node x="924.7976190476192" y="2233.5">kickstart.orders.OrdersManagementUnitTests</node>
+    <node x="21.5" y="1980.0">kickstart.orders.OrdersController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.OrderCreationFrom">
+      <point x="211.71428571428572" y="-301.5" />
+      <point x="480.2142857142857" y="1960.0" />
+      <point x="993.75" y="1960.0" />
+      <point x="993.75" y="1473.0" />
+      <point x="1000.2142857142858" y="1473.0" />
+      <point x="-97.0" y="92.0" />
+    </edge>
+    <edge source="kickstart.orders.OrderCreationFrom" target="kickstart.orders.SubCategory">
+      <point x="48.5" y="-92.0" />
+      <point x="1145.7142857142858" y="1129.0" />
+      <point x="1069.6541189006464" y="1129.0" />
+      <point x="1069.6541189006464" y="387.0" />
+      <point x="744.1908068783063" y="387.0" />
+      <point x="18.111111111111086" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.OrderCreationFrom">
+      <point x="86.28571428571439" y="-257.0" />
+      <point x="868.5648331863608" y="2623.0" />
+      <point x="1323.7142857142858" y="2623.0" />
+      <point x="1323.7142857142858" y="1463.0" />
+      <point x="1258.8809523809525" y="1463.0" />
+      <point x="161.66666666666669" y="92.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.orders.OrderCreationFrom">
+      <point x="37.75" y="-48.0" />
+      <point x="1113.5476190476193" y="1960.0" />
+      <point x="1059.633175338036" y="1960.0" />
+      <point x="1059.633175338036" y="1473.0" />
+      <point x="1129.547619047619" y="1473.0" />
+      <point x="32.33333333333326" y="92.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.Orders">
+      <point x="0.0" y="-213.5" />
+      <point x="616.4188896237501" y="1473.0" />
+      <point x="606.6331753380359" y="1473.0" />
+      <point x="606.6331753380359" y="1129.0" />
+      <point x="519.1193966784242" y="1129.0" />
+      <point x="0.0" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.Status">
+      <point x="-211.71428571428567" y="-301.5" />
+      <point x="56.785714285714334" y="1960.0" />
+      <point x="47.50826719576662" y="1960.0" />
+      <point x="47.50826719576662" y="417.0" />
+      <point x="313.52612433862373" y="417.0" />
+      <point x="-27.428571428571445" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.Status">
+      <point x="-129.42857142857133" y="-257.0" />
+      <point x="652.850547472075" y="2633.0" />
+      <point x="0.0" y="2633.0" />
+      <point x="0.0" y="407.0" />
+      <point x="299.81183862433807" y="407.0" />
+      <point x="-41.14285714285711" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.OrdersController">
+      <point x="-43.14285714285705" y="-257.0" />
+      <point x="739.1362617577894" y="2613.0" />
+      <point x="268.5" y="2613.0" />
+      <point x="0.0" y="301.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.OrderCreationFrom">
+      <point x="263.57142857142856" y="-213.5" />
+      <point x="879.9903181951787" y="1473.0" />
+      <point x="935.547619047619" y="1473.0" />
+      <point x="-161.66666666666674" y="92.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersUnitTests" target="kickstart.orders.SubCategory">
+      <point x="79.125" y="-147.0" />
+      <point x="812.7581753380359" y="1079.0" />
+      <point x="742.6541189006464" y="1079.0" />
+      <point x="742.6541189006464" y="457.0" />
+      <point x="707.9685846560841" y="457.0" />
+      <point x="-18.111111111111086" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.OrdersManagement">
+      <point x="141.14285714285717" y="-301.5" />
+      <point x="409.64285714285717" y="1960.0" />
+      <point x="462.66888962375015" y="1960.0" />
+      <point x="-153.75" y="213.5" />
+    </edge>
+    <edge source="kickstart.orders.Orders" target="kickstart.orders.Status">
+      <point x="-47.375" y="-291.0" />
+      <point x="471.7443966784242" y="417.0" />
+      <point x="354.6689814814809" y="417.0" />
+      <point x="13.714285714285722" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.orders.OrdersManagement">
+      <point x="-113.25" y="-48.0" />
+      <point x="962.5476190476192" y="1950.0" />
+      <point x="872.6688896237501" y="1950.0" />
+      <point x="256.25" y="213.5" />
+    </edge>
+    <edge source="kickstart.orders.OrderCreationFrom" target="kickstart.orders.Status">
+      <point x="-48.5" y="-92.0" />
+      <point x="1048.7142857142858" y="1129.0" />
+      <point x="1058.6541189006464" y="1129.0" />
+      <point x="1058.6541189006464" y="397.0" />
+      <point x="382.0975529100523" y="397.0" />
+      <point x="41.14285714285711" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersRepository" target="kickstart.orders.Orders">
+      <point x="0.0" y="-25.5" />
+      <point x="444.5985633450909" y="1129.0" />
+      <point x="477.0082855673131" y="1129.0" />
+      <point x="-42.111111111111086" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.Orders">
+      <point x="-86.28571428571416" y="-257.0" />
+      <point x="695.9934046149323" y="2623.0" />
+      <point x="11.0" y="2623.0" />
+      <point x="11.0" y="1109.0" />
+      <point x="350.67495223397975" y="1109.0" />
+      <point x="-168.44444444444446" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.OrdersManagement">
+      <point x="5.6843418860808015E-14" y="-257.0" />
+      <point x="782.2791189006465" y="2603.0" />
+      <point x="837.0" y="2603.0" />
+      <point x="837.0" y="1950.0" />
+      <point x="770.1688896237501" y="1950.0" />
+      <point x="153.75" y="213.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersControllerIntegrationTests" target="kickstart.orders.SubCategory">
+      <point x="129.42857142857153" y="-257.0" />
+      <point x="911.7076903292179" y="2633.0" />
+      <point x="1334.7142857142858" y="2633.0" />
+      <point x="1334.7142857142858" y="357.0" />
+      <point x="798.5241402116396" y="357.0" />
+      <point x="72.44444444444446" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersUnitTests" target="kickstart.orders.Orders">
+      <point x="-79.125" y="-147.0" />
+      <point x="654.5081753380359" y="1109.0" />
+      <point x="603.3416189006465" y="1109.0" />
+      <point x="84.22222222222229" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.Status">
+      <point x="-263.57142857142844" y="-213.5" />
+      <point x="352.8474610523217" y="1473.0" />
+      <point x="304.65411890064644" y="1473.0" />
+      <point x="304.65411890064644" y="427.0" />
+      <point x="327.24041005290945" y="427.0" />
+      <point x="-13.714285714285722" y="91.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.Orders">
+      <point x="0.0" y="-301.5" />
+      <point x="268.5" y="1940.0" />
+      <point x="124.18674676660726" y="1940.0" />
+      <point x="124.18674676660726" y="1129.0" />
+      <point x="434.897174456202" y="1129.0" />
+      <point x="-84.22222222222223" y="291.0" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.SubCategory">
+      <point x="175.71428571428578" y="-213.5" />
+      <point x="792.1331753380359" y="1473.0" />
+      <point x="849.6331753380359" y="1473.0" />
+      <point x="849.6331753380359" y="447.0" />
+      <point x="726.0796957671952" y="447.0" />
+      <point x="0.0" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.Orders" target="kickstart.orders.SubCategory">
+      <point x="142.125" y="-291.0" />
+      <point x="661.2443966784242" y="457.0" />
+      <point x="689.857473544973" y="457.0" />
+      <point x="-36.22222222222217" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersController" target="kickstart.orders.SubCategory">
+      <point x="-141.1428571428571" y="-301.5" />
+      <point x="127.35714285714289" y="1960.0" />
+      <point x="92.99206349206361" y="1960.0" />
+      <point x="92.99206349206361" y="437.0" />
+      <point x="653.6352513227507" y="437.0" />
+      <point x="-72.44444444444446" y="168.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagement" target="kickstart.orders.OrdersRepository">
+      <point x="-87.85714285714278" y="-213.5" />
+      <point x="528.5617467666074" y="1473.0" />
+      <point x="500.3485633450909" y="1473.0" />
+      <point x="55.75" y="25.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersDataInitializer" target="kickstart.orders.OrdersManagement">
+      <point x="72.75" y="-59.5" />
+      <point x="753.75" y="1950.0" />
+      <point x="667.6688896237501" y="1950.0" />
+      <point x="51.25" y="213.5" />
+    </edge>
+    <edge source="kickstart.orders.OrdersManagementUnitTests" target="kickstart.orders.SubCategory">
+      <point x="113.25" y="-48.0" />
+      <point x="1189.0476190476193" y="1960.0" />
+      <point x="1301.7142857142858" y="1960.0" />
+      <point x="1301.7142857142858" y="367.0" />
+      <point x="780.4130291005285" y="367.0" />
+      <point x="54.33333333333337" y="168.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="211.0" y="199.5" />
+  <SelectedNodes>
+    <node>kickstart.orders.OrdersDataInitializer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

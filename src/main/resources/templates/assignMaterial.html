@@ -1,0 +1,83 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Materials</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.min.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+		<link th:href="@{/resources/css/form.css}" rel="stylesheet"
+		href="../static/resources/css/form.css" type="text/css"/>
+        
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title" th:text="#{assignMaterial.header}">KLEINREPARATURBETRIEB - Materialübersicht</h4>
+                            <p th:text="#{assignMaterial.subheader}">Hier haben sie die Möglichkeit , Materialien zu zuweisen.  </p>
+                        </div>
+                    </div>
+                    <div class="row projects-holder">
+						<table class="table table-striped">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col" th:text="#{assignMaterial.category}">Kategorie</th>
+						      <th scope="col" th:text="#{assignMaterial.categoryAssignment}">Zuweisen an die Kategorie</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr th:each="entry , it : ${entries}" th:with="index = ${it.count}">
+						      <th th:text="${index}" scope="row">1</th>
+						      <td th:text="${entry}">Mark</td>
+						      <td>
+						      	<a th:href="@{/assignCategory/{category}(category=${entry})}" class="btn btn-success"><i class="fa fa-arrow-right"></i></a>
+						      </td>
+						    </tr>
+						  </tbody>
+						</table>	    	
+                    </div>
+                    </div>
+                    <hr>
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+        
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+
+    </body>
+</html>

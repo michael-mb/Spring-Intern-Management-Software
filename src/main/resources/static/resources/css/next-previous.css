@@ -1,0 +1,48 @@
+
+.previous {
+	
+  margin-top: 15px;
+  background-color: #f1f1f1;
+  color: black;
+  height: 40px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.previous:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.next:hover{
+  background-color: #ddd;
+  color: black;
+}
+.page-section{
+	position: relative;
+}
+.next {
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.super-card {
+  width:100%;
+}
+
+.month{
+  font-size: 14px;
+  padding-left: 50px;
+}

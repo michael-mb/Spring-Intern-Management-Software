@@ -1,0 +1,131 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.min.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+		<link th:href="@{/resources/css/form.css}" rel="stylesheet"
+		href="../static/resources/css/form.css" type="text/css"/>
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		<!-- BANNER -->
+        <div th:include="banner :: banner" class="banner-bg small" id="top"></div>
+        <!-- /BANNER -->
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    <div class="register"> 
+						<img src="/resources/images/user.png" class="user">
+						<h2 th:text="#{register.header}">Registrierung</h2>
+						<form method="post" role="form" id="form" th:action="@{/register}" th:object="${form}">
+						<p class="form-error" th:if="${formVerification}" th:text="${kindOfMistake}"></p>
+						<p class="form-error" th:if="${passVerification}" th:text="#{register.passwordsnotidentical}">Passwort und Passwortbestätigung stimmen nicht überrein !</p>
+							<div class="horizontal-content">
+								<div class="horizontal-inner">
+									<p th:text="#{register.surname}">Name*</p>
+									<input type="text" th:placeholder="#{register.surname}" name="name" id="name" required>
+								</div>
+								<div class="horizontal-inner">
+									<p th:text="#{register.forename}">Vorname*</p>
+									<input type="text" th:placeholder="#{register.forename}" name="firstName" id="firstName" required>
+								</div>
+							</div>
+			
+							<p th:text="#{register.department}">Abteilung*</p>
+							<div class="department">
+								<div class="check-wrapper">
+									<label class="check-container" >
+										<span th:text="#{register.sew}">Nähservice</span>
+										<input type="checkbox" name="naehen" id="naehen">
+										<span class="checkmark"></span>
+									</label>
+			
+									<label class="check-container" >
+										<span th:text="#{register.key}">Schlüsseldienst</span>
+										<input type="checkbox" name="schluessel" id="schluessel">
+										<span class="checkmark"></span>
+									</label>
+			
+									<label class="check-container" >
+										<span th:text="#{register.elektro}">Elektrowerkstatt</span>
+										<input type="checkbox" name="elektro" id="elektro">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+			
+								<div class="check-wrapper">
+									<label class="check-container" >
+										<span th:text="#{register.patch}">Flickschusterei</span>
+										<input type="checkbox" name="flicken" id="flicken">
+										<span class="checkmark"></span>
+									</label>
+									<label class="check-container" >
+										<span th:text="#{register.grind}">Scherenschleiferei</span>
+										<input type="checkbox" name="schleifen" id="schleifen">
+										<span class="checkmark"></span>
+									</label>
+									<label class="check-container" >
+										<span th:text="#{register.clean}">Schnellreinigung und Heißmangel</span>
+										<input type="checkbox" name="reinigen" id="reinigen">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<p th:text="#{register.salary}">Lohn*</p>
+							<input type="number" min="1" max="2000000000" placeholder="1" name="salary" id="salary" required>
+			
+							<p th:text="#{register.email}">Email*</p>
+							<input type="email" th:placeholder="#{register.email}" name="email" id="email" required>
+			
+							<p th:text="#{register.password}">Passwort*</p>
+							<input type="password" placeholder="••••••" name="passwort" id="passwort" required>
+			
+							<p th:text="#{register.confirmpassword}">Passwort bestätigen* </p>
+							<input type="password" placeholder="••••••" name="passwortValid" id="passwortValid" required>
+			
+							<button type="submit" th:text="#{register.header}">Registrieren</button>
+							
+							<p class="pflichtfeld" th:text="#{register.required}">* : pflichtfeld</p>
+						</form>
+					</div>
+		
+                    
+                    <hr>
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+
+                </div>
+
+            </div>
+        </div>
+
+
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+
+    </body>
+  
+</html>

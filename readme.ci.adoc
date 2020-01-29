@@ -1,0 +1,11 @@
+= Continuous Integration and Inspection
+
+Your code will be continuously built and inspected by https://st-lab-ci.inf.tu-dresden.de[Jenkins
+and SonarQube] (the service is only available from inside the TU network).
+
+There is one account per group. Use the following login for both Jenkins and SonarQube:
+
+* Username: `swt19w23`
+* Password: `o1QqFDVxL4`
+
+Tip: select *Keep me signed in* when logging in to Jenkins.

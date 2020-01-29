@@ -1,0 +1,70 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>Login</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.min.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+		
+		
+        <link th:href="@{/resources/css/login.css}" rel="stylesheet"
+		href="../static/resources/css/login.css" type="text/css"/>
+		
+        <script th:src="@{/resources/js/modernizr-2.6.2.min.js}" src="resources/js/modernizr-2.6.2.min.js"></script>
+		<title>Login</title>
+	</head>
+	<body>		    
+
+		<!-- MENU -->
+		<div class="sidebar-menu hidden-xs hidden-sm" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		<!-- BANNER -->
+        <div th:include="banner :: banner" class="banner-bg small" id="top"></div>
+        <!-- /BANNER -->
+        
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+					<section class="loginBox-wrapper">
+						<div class="loginBox">
+							<img th:src="@{/resources/images/user.png}" class="user">
+							<h2 th:text="#{login.login}">Anmelden</h2>
+							<form class="login-form" th:action="@{/login}" method="post">
+								<p th:text="#{login.username}">Benutzername</p>
+								<input type="text" id="username" name="username" autofocus="autofocus" th:placeholder="#{login.username}">
+								<p th:text="#{login.password}">Passwort</p>
+								<input type="password" id="password" name="password" placeholder="••••••">
+								<input type="submit" name="" value="Anmelden" th:value="#{login.login}">
+							</form>
+						</div>
+					</section>                  
+                    <hr>
+
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+
+                </div>
+
+            </div>
+        </div>
+
+
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="js/plugin.js"></script>
+
+    </body>
+</html>

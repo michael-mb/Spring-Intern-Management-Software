@@ -1,0 +1,21 @@
+.sidebar-menu{
+	display:none;
+}
+.main-content{
+	width:100%;
+}
+.print-view{
+	display:none;
+}
+.next , .previous {
+	display:none;
+}
+.selectContent{
+	display:none;
+}
+.btn{
+	display:none;
+}
+.status{
+	display:none;
+}

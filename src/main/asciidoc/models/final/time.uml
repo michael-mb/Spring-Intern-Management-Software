@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kickstart.time</OriginalElement>
+  <nodes>
+    <node x="364.0" y="1010.5">kickstart.time.TimeSlotController</node>
+    <node x="686.0" y="1010.5">kickstart.time.TimeSlotDataInitializer</node>
+    <node x="221.83333333333331" y="379.0">kickstart.time.TimeSlotManagement</node>
+    <node x="418.51250000000005" y="0.0">kickstart.time.TimeSlot</node>
+    <node x="661.8928571428571" y="1311.0">kickstart.time.TimeSlotControllerIntegrationTests</node>
+    <node x="0.0" y="901.0">kickstart.time.TimeSlotManagementUnitTests</node>
+    <node x="490.7083333333334" y="278.0">kickstart.time.TimeSlotRepository</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kickstart.time.TimeSlotRepository" target="kickstart.time.TimeSlot">
+      <point x="0.0" y="-25.5" />
+      <point x="607.2083333333334" y="258.0" />
+      <point x="574.5125" y="258.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.time.TimeSlot">
+      <point x="-114.66666666666669" y="-180.0" />
+      <point x="57.333333333333314" y="876.0" />
+      <point x="135.2874999999999" y="876.0" />
+      <point x="135.2874999999999" y="248.0" />
+      <point x="449.71250000000003" y="248.0" />
+      <point x="-124.80000000000001" y="114.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotController" target="kickstart.time.TimeSlotManagement">
+      <point x="-75.5" y="-70.5" />
+      <point x="439.5" y="876.0" />
+      <point x="460.8333333333333" y="876.0" />
+      <point x="-239.0" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotDataInitializer" target="kickstart.time.TimeSlotManagement">
+      <point x="-105.75" y="-70.5" />
+      <point x="791.75" y="876.0" />
+      <point x="779.5" y="876.0" />
+      <point x="79.66666666666663" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.time.TimeSlot">
+      <point x="119.50000000000011" y="-236.0" />
+      <point x="819.3333333333335" y="359.0" />
+      <point x="734.2083333333335" y="359.0" />
+      <point x="734.2083333333335" y="258.0" />
+      <point x="636.9125" y="258.0" />
+      <point x="62.39999999999998" y="114.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagement" target="kickstart.time.TimeSlotRepository">
+      <point x="-358.4999999999999" y="-236.0" />
+      <point x="341.3333333333334" y="359.0" />
+      <point x="548.9583333333334" y="359.0" />
+      <point x="-58.25" y="25.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotControllerIntegrationTests" target="kickstart.time.TimeSlotController">
+      <point x="-75.5" y="-70.0" />
+      <point x="737.3928571428571" y="1286.0" />
+      <point x="515.0" y="1286.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotManagementUnitTests" target="kickstart.time.TimeSlotManagement">
+      <point x="114.66666666666669" y="-180.0" />
+      <point x="286.6666666666667" y="876.0" />
+      <point x="301.49999999999994" y="876.0" />
+      <point x="-398.33333333333337" y="236.0" />
+    </edge>
+    <edge source="kickstart.time.TimeSlotControllerIntegrationTests" target="kickstart.time.TimeSlotManagement">
+      <point x="75.5" y="-70.0" />
+      <point x="888.3928571428571" y="1286.0" />
+      <point x="1119.5" y="1286.0" />
+      <point x="1119.5" y="876.0" />
+      <point x="1098.1666666666665" y="876.0" />
+      <point x="398.3333333333333" y="236.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="186.5" y="162.5" />
+  <SelectedNodes>
+    <node>kickstart.time.TimeSlotController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

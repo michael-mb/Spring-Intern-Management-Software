@@ -1,0 +1,17 @@
+= Kickstart
+
+The kickstart module is a template project to bootstrap the Java project in the Software Engineering lab.
+The project is supposed to be copied into the group's repository to get it started easily.
+It contains the following features:
+
+* a skeleton Java 11 web application based on Spring Boot and Salespoint framework (see `src/main/java`)
+* a placeholder Asciidoc file in `src/main/asciidoc` for documentation
+
+== How to run the application?
+
+* In the IDE: find `Application.java`, right-click project, select "Run As > Java Application"
+* From the command line: run `./mvnw spring-boot:run`
+
+== How to package the application?
+
+* Run `./mvnw clean package`. The packaged application (a JAR in `target/`) can be run with `java -jar $jarName`.

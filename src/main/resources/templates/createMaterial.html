@@ -1,0 +1,102 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Material</title>
+                
+        <link rel="icon" type="image/png" th:href="@{/resources/images/logo.png}" /> 
+        <link th:href="@{/resources/css/normalize.css}" rel="stylesheet"
+          href="../static/resources/css/normalize.css" type="text/css"/> 
+        <link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet"
+          href="../static/resources/css/font-awesome.css" type="text/css"/>
+        <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"
+		href="../static/resources/css/bootstrap.min.css" type="text/css"/>
+        <link th:href="@{/resources/css/templatemo-style.css}" rel="stylesheet"
+		href="../static/resources/css/templatemo-style.css" type="text/css"/>
+		<link th:href="@{/resources/css/form.css}" rel="stylesheet"
+		href="../static/resources/css/form.css" type="text/css"/>
+		
+        
+        <script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="sidebar-menu" th:include="menu :: menu"></div>	
+		<!-- /MENU -->
+		
+		
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title" th:text="#{createMaterial.header}">KLEINREPARATURBETRIEB - Material</h4>
+                           <p th:text="#{createMaterial.subheader}"> Hier haben sie die Möglichkeit , die Materialien zu erzeugen. </p>
+                        </div>
+                    </div>
+                    
+					<div class="register">
+			            <img src="/resources/images/logoOhneSchrift.png" class="user">
+			            <h2 th:text="#{createMaterial.material}">Material</h2>
+			            <form method="post" role="form" id="form" th:action="@{/createMaterial}" th:object="${form}">
+			                <div class="horizontal-content">
+			                    <div class="horizontal-inner">
+									<p th:text="#{createMaterial.name}">Name des Materials*</p>
+									<p th:if="${mistake} != null" class="error" th:text="${mistake}"></p>
+			                        <input type="text" th:placeholder="#{createMaterial.name}" name="name" id="name" required>
+			                    </div>   
+			                    
+			                    <div class="horizontal-inner">
+			                        <p th:text="#{createMaterial.amount}">Menge des Materials*</p>
+	                               <div class="quantity">
+										<input type="number"  min="1" max="999999" step="1" value="1" name="amount" id="amount" required>
+								   </div>
+			                    </div>   
+			                               
+			                </div>
+			                <div class="horizontal-content">
+			                    <div class="horizontal-inner">
+			                        <p th:text="#{createMaterial.price}">Preis des Materials*</p>
+			                       <div class="quantity">
+										<input type="number"  min="1" max="99999999" step="1" value="1" name="price" id="price" required>
+								   </div>
+			                    </div>
+			                    
+			                  	<div class="horizontal-inner">
+			                        <p th:text="#{createMaterial.limit}">Grenze des Materials*</p>
+			                       <div class="quantity">
+										<input type="number"  min="1" max="99999999" step="1" value="1" name="limit" id="limit" required>
+								   </div>
+			                    </div>
+			                    
+			                </div>
+			                <button type="submit" th:text="Bearbeiten">Bearbeiten</button>
+							<p class="pflichtfeld">*required</p>
+			            </form>
+					</div>
+                    <hr>
+					<footer class="row" id="footer" th:include="footer :: footer"></footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 		<!-- LANGUAGE -->
+		<div class="language" th:include="language:: language"></div>	
+		<!-- LANGUAGE -->
+
+        <script th:src="@{/resources/js/vendor/jquery-1.10.2.min.js}" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script th:src="@{/resources/js/main.js}" src="resources/js/main.js"></script>
+        <script th:src="@{/resources/js/plugin.js}" src="resources/js/plugin.js"></script>
+
+    </body>
+</html>

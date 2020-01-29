@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kickstart.room</OriginalElement>
+  <nodes>
+    <node x="82.24999999999997" y="279.0">kickstart.room.RoomManagement</node>
+    <node x="292.31249999999994" y="0.0">kickstart.room.Room</node>
+    <node x="304.0" y="459.5">kickstart.room.RoomManagementUnitTests</node>
+    <node x="63.15625" y="178.0">kickstart.room.RoomRepository</node>
+    <node x="0.0" y="448.0">kickstart.room.RoomDataInitializer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kickstart.room.RoomRepository" target="kickstart.room.Room">
+      <point x="0.0" y="-25.5" />
+      <point x="173.15625" y="148.0" />
+      <point x="327.81249999999994" y="148.0" />
+      <point x="-35.5" y="59.0" />
+    </edge>
+    <edge source="kickstart.room.RoomManagementUnitTests" target="kickstart.room.Room">
+      <point x="-34.125" y="-48.0" />
+      <point x="406.375" y="428.0" />
+      <point x="439.17857142857144" y="428.0" />
+      <point x="439.17857142857144" y="158.0" />
+      <point x="375.1458333333333" y="158.0" />
+      <point x="11.833333333333343" y="59.0" />
+    </edge>
+    <edge source="kickstart.room.RoomDataInitializer" target="kickstart.room.Room">
+      <point x="-94.66666666666669" y="-59.5" />
+      <point x="47.333333333333314" y="428.0" />
+      <point x="52.65625" y="428.0" />
+      <point x="52.65625" y="138.0" />
+      <point x="304.14583333333326" y="138.0" />
+      <point x="-59.166666666666686" y="59.0" />
+    </edge>
+    <edge source="kickstart.room.RoomManagement" target="kickstart.room.Room">
+      <point x="90.33333333333331" y="-59.5" />
+      <point x="308.08333333333326" y="254.0" />
+      <point x="321.9672619047619" y="254.0" />
+      <point x="321.9672619047619" y="158.0" />
+      <point x="351.47916666666663" y="158.0" />
+      <point x="-11.833333333333314" y="59.0" />
+    </edge>
+    <edge source="kickstart.room.RoomManagement" target="kickstart.room.RoomRepository">
+      <point x="0.0" y="-59.5" />
+      <point x="217.74999999999997" y="254.0" />
+      <point x="228.15625" y="254.0" />
+      <point x="55.0" y="25.5" />
+    </edge>
+    <edge source="kickstart.room.RoomDataInitializer" target="kickstart.room.RoomManagement">
+      <point x="94.66666666666663" y="-59.5" />
+      <point x="236.66666666666663" y="428.0" />
+      <point x="217.74999999999997" y="428.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="kickstart.room.RoomManagementUnitTests" target="kickstart.room.RoomManagement">
+      <point x="-102.375" y="-48.0" />
+      <point x="338.125" y="428.0" />
+      <point x="308.08333333333326" y="428.0" />
+      <point x="90.33333333333331" y="59.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="131.5" y="125.5" />
+  <SelectedNodes>
+    <node>kickstart.room.RoomManagement</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
